@@ -1,0 +1,170 @@
+0
+38
++define+SIMULATION
++itf+/home/student/snps_tools_target/vcs/U-2023.03/linux64/lib/vcsdp_lite.tab
++vcsd1
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/home/student/snps_tools_target/vcs/U-2023.03/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /home/student/snps_tools_target/vcs/U-2023.03/linux64/lib/libvirsim.so /home/student/snps_tools_target/vcs/U-2023.03/linux64/lib/liberrorinf.so /home/student/snps_tools_target/vcs/U-2023.03/linux64/lib/libsnpsmalloc.so /home/student/snps_tools_target/vcs/U-2023.03/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/home/student/snps_tools_target/vcs/U-2023.03/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/home/student/snps_tools_target/verdi/U-2023.03-SP1/share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/home/student/snps_tools_target/vcs/U-2023.03/include
+-Mxllcflags=
+-P
+-debug_access+all
+-f filelist.f
+-fsdb
+-full64
+-gen_obj
+-o simv
+-override_timescale=1ns/1ps
+-picarchive
+-sverilog
+-timescale=1ns/1ps
+-top
+/home/student/snps_tools_target/vcs/U-2023.03/linux64/bin/vcs1
+tb_top
+simv
+/home/student/snps_tools_target/verdi/U-2023.03-SP1/share/PLI/VCS/LINUX64/verdi.tab
+filelist.f
+102
+which_declare=declare -f
+sentaurus_HOME=/home/student/snps_tools_target/sentaurus/T-2022.03-SP2
+XMODIFIERS=@im=ibus
+XDG_VTNR=2
+XDG_SESSION_TYPE=wayland
+XDG_SESSION_ID=2
+XDG_SESSION_DESKTOP=gnome
+XDG_SEAT=seat0
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_MENU_PREFIX=gnome-
+XDG_DATA_DIRS=/home/student/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/
+XDG_CURRENT_DESKTOP=GNOME
+XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.C2H8V3
+WAYLAND_DISPLAY=wayland-0
+VTE_VERSION=5204
+VMR_MODE_FLAG=64
+VERDI_LIC=27021@14.139.1.126
+VERDI_HOME=/home/student/snps_tools_target/verdi/U-2023.03-SP1
+VENDOR=unknown
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LIC=27021@14.139.1.126
+VCS_HOME=/home/student/snps_tools_target/vcs/U-2023.03
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+USERNAME=student
+UNAME=/bin/uname
+TOOL_HOME=/home/student/snps_tools_target/vcs/U-2023.03/linux64
+S_COLORS=auto
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SNPS_VCS_CLANG_PATH=/home/student/snps_tools_target/vcs/U-2023.03/linux64/clang
+SNPS_INTERNAL_VCS_LINUX_OS=linux
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/3407,unix/unix:/tmp/.ICE-unix/3407
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_IM_MODULE=ibus
+PRIMETIME_LIC=27021@14.139.1.126
+PRIMETIME=/home/student/snps_tools_target/prime/U-2022.12-SP3
+OVA_UUM=0
+OSTYPE=linux
+MODULES_USE_COMPAT_VERSION=0
+MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH LD_PRELOAD
+MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl
+MODULESHOME=/usr/share/Modules
+MODULEPATH_modshare=/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/share/modulefiles:2
+MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+MANAGERPID=3334
+LOADEDMODULES=
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+KIRO_VOICE_SUPPORTED=0
+KIRO_VERSION_OVERRIDE=2.22.1
+KIRO_VERSION=2.22.1
+KIRO_TUI_TELEMETRY_KEY_FILE=/tmp/kiro-tui-telemetry-7d31dfb7-6b1b-4d0f-9cd5-5995938a543b.key
+KIRO_TUI_READY_TOKEN=c97b0d55-5000-4b7f-9547-94391c7cc2ce
+KIRO_TUI_READY_FILE=/tmp/kiro-tui-ready-789a0926-18a3-491a-a9f5-93e687f0ec66/ready
+KIRO_TUI_FORCE_COLOR=3
+KIRO_TELEMETRY_OTLP_ENDPOINT=https://prod.us-east-1.telemetry-v2.kiro.dev
+KIRO_TELEMETRY_ENABLED=true
+KIRO_TELEMETRY_CLIENT_ID=7fa9662c-f91b-488b-bc55-44bafeef3711
+KIRO_SESSION_ID=f577a4b8-9b7f-4191-940d-42decc46b47e
+KIRO_LITE_ROLLOUT_ENABLED=0
+KIRO_INFRA_SAFETY_ROLLOUT_ENABLED=0
+KIRO_FEED_FILE=/home/student/.local/share/kiro-cli/feed.json
+KIRO_ENABLED_FEATURES=["voice","remote_sandbox","tangent","remote_changelog","cloud_config","session_dashboard"]
+KIRO_CONTENT_COLLECTION_ENABLED=true
+KIRO_CLI_ACP_CLIENT_NAME=kiro-tui
+KIRO_CHAT_CLI_FALLBACK_BIN=/home/student/.local/share/kiro-cli/run/chat-cli-2.22.1
+KIRO_CHAT_CLI_BIN_IDENTITY=unix:64770:3278024549:426947544:1789797859988880822
+KIRO_CHAT_CLI_BIN=/home/student/.local/bin/kiro-cli-chat
+JSC_numberOfGCMarkers=1
+JOURNAL_STREAM=9:48920
+INVOCATION_ID=de163aa2257b49f5a8e6cdd770279031
+HOSTTYPE=x86_64-linux
+HISTCONTROL=ignoredups
+GUESTFISH_RESTORE=\e[0m
+GUESTFISH_PS1=\[\e[1;32m\]><fs>\[\e[0;31m\] 
+GUESTFISH_OUTPUT=\e[0m
+GUESTFISH_INIT=\e[1;34m
+GROUP=student
+GNOME_TERMINAL_SERVICE=:1.89
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/14f59eeb_2213_4e9c_ba82_a508c69d0bb6
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GIT_EDITOR=true
+GDM_LANG=en_IN.UTF-8
+GDMSESSION=gnome
+FINESIM_LIC=27021@14.139.1.126
+FINESIM_HOME=/home/student/snps_tools_target/finesim/U-2023.03
+DESKTOP_SESSION=gnome
+DESIGNCOMPILER=/home/student/snps_tools_target/syn/T-2022.03-SP5
+DEBUGINFOD_URLS=https://debuginfod.centos.org/ 
+DBUS_STARTER_BUS_TYPE=session
+DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=8dc38cd1679530ea8e6e53616ab78ef2
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=8dc38cd1679530ea8e6e53616ab78ef2
+COLORTERM=truecolor
+AWS_EXECUTION_ENV=AmazonQ-For-CLI Version/2.22.1 acp-client/kiro-tui
+AGENT_DISPLAY_OUT=/tmp/agent-display-out-9671-1790418120208879487-tooluse_wsyzZrFDqDHZDrqHT5A12Y.fifo
+AGENT_CONTEXT_OUT=/tmp/agent-context-out-9671-1790418120209038262-tooluse_wsyzZrFDqDHZDrqHT5A12Y.fifo
+0
+0
+17
+1790418112 tests/random_test.sv
+1790417470 tests/multi_master_test.sv
+1790418039 tests/all_slaves_test.sv
+1790417879 tests/basic_rw_test.sv
+1790417930 tests/reset_test.sv
+1790417708 ./tb_top.sv
+1790417255 ./axi_assertions.sv
+1790417197 ./axi_scoreboard.sv
+1790417961 ./axi_slave_model.sv
+1790417131 ./axi_master_bfm.sv
+1790416149 ../scripts/axi_interconnect_wrap_3x7.v
+1790401089 ../rtl/interconnect/axi_interconnect.v
+1790401085 ../rtl/interconnect/arbiter.v
+1790401092 ../rtl/interconnect/priority_encoder.v
+1790417756 filelist.f
+1685268911 /home/student/snps_tools_target/verdi/U-2023.03-SP1/share/PLI/VCS/LINUX64/verdi.tab
+1677384340 /home/student/snps_tools_target/vcs/U-2023.03/linux64/lib/vcsdp_lite.tab
+4
+1677385575 /home/student/snps_tools_target/vcs/U-2023.03/linux64/lib/libvirsim.so
+1677385060 /home/student/snps_tools_target/vcs/U-2023.03/linux64/lib/liberrorinf.so
+1677385018 /home/student/snps_tools_target/vcs/U-2023.03/linux64/lib/libsnpsmalloc.so
+1677385055 /home/student/snps_tools_target/vcs/U-2023.03/linux64/lib/libvfs.so
+1790418122 simv.daidir
+-1 partitionlib
