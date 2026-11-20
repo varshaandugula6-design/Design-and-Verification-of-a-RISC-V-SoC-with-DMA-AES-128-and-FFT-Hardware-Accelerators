@@ -1,0 +1,53 @@
+
+/home/student/Documents/honours_121/CBP/firmware/tests_final/test_uart_c.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00040000 <_start>:
+   40000:	00088137          	lui	sp,0x88
+   40004:	00000097          	auipc	ra,0x0
+   40008:	00c080e7          	jalr	12(ra) # 40010 <main>
+
+0004000c <_loop>:
+   4000c:	0000006f          	j	4000c <_loop>
+
+00040010 <main>:
+   40010:	800037b7          	lui	a5,0x80003
+   40014:	0007a223          	sw	zero,4(a5) # 80003004 <main+0x7ffc2ff4>
+   40018:	08300713          	li	a4,131
+   4001c:	800037b7          	lui	a5,0x80003
+   40020:	00e7a623          	sw	a4,12(a5) # 8000300c <main+0x7ffc2ffc>
+   40024:	15b00693          	li	a3,347
+   40028:	00d7a423          	sw	a3,8(a5)
+   4002c:	00300713          	li	a4,3
+   40030:	00e7a623          	sw	a4,12(a5)
+   40034:	80003737          	lui	a4,0x80003
+   40038:	01472783          	lw	a5,20(a4) # 80003014 <main+0x7ffc3004>
+   4003c:	000806b7          	lui	a3,0x80
+   40040:	01470713          	addi	a4,a4,20
+   40044:	00f6a023          	sw	a5,0(a3) # 80000 <main+0x3fff0>
+   40048:	0207f793          	andi	a5,a5,32
+   4004c:	80003637          	lui	a2,0x80003
+   40050:	04078263          	beqz	a5,40094 <main+0x84>
+   40054:	05600793          	li	a5,86
+   40058:	00f62023          	sw	a5,0(a2) # 80003000 <main+0x7ffc2ff0>
+   4005c:	00072783          	lw	a5,0(a4)
+   40060:	0207f793          	andi	a5,a5,32
+   40064:	fe078ce3          	beqz	a5,4005c <main+0x4c>
+   40068:	00072703          	lw	a4,0(a4)
+   4006c:	000807b7          	lui	a5,0x80
+   40070:	0a270637          	lui	a2,0xa270
+   40074:	00e7a223          	sw	a4,4(a5) # 80004 <main+0x3fff4>
+   40078:	00160613          	addi	a2,a2,1 # a270001 <main+0xa22fff1>
+   4007c:	c001d737          	lui	a4,0xc001d
+   40080:	00c7a423          	sw	a2,8(a5)
+   40084:	afe70713          	addi	a4,a4,-1282 # c001cafe <main+0xbffdcaee>
+   40088:	00e7ac23          	sw	a4,24(a5)
+   4008c:	00000513          	li	a0,0
+   40090:	00008067          	ret
+   40094:	deadc737          	lui	a4,0xdeadc
+   40098:	eef70713          	addi	a4,a4,-273 # deadbeef <main+0xdea9bedf>
+   4009c:	00e6ac23          	sw	a4,24(a3)
+   400a0:	00100513          	li	a0,1
+   400a4:	00008067          	ret

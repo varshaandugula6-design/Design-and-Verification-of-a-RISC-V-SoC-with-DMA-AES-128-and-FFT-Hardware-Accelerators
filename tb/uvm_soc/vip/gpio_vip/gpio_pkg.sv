@@ -1,0 +1,22 @@
+// ==============================================================================
+// Project      : RISC-V SoC with DMA, AES-128 & FFT Hardware Accelerators
+// VIP Name     : GPIO UVM VIP (Corrected & Enhanced VIP)
+// File         : gpio_pkg.sv
+// Description  : UVM package containing all GPIO VIP classes.
+// ==============================================================================
+
+`ifndef GPIO_PKG_SV
+`define GPIO_PKG_SV
+
+package gpio_pkg;
+    import uvm_pkg::*;
+    `include "uvm_macros.svh"
+
+    `include "gpio_item.sv"
+    `include "gpio_sequencer.sv"
+    `include "gpio_driver.sv"
+    `include "gpio_monitor.sv"
+    `include "gpio_agent.sv"
+endpackage
+
+`endif // GPIO_PKG_SV

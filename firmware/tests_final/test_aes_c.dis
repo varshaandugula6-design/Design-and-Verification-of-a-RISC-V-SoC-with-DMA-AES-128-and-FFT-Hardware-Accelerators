@@ -1,0 +1,93 @@
+
+/home/student/Documents/honours_121/CBP/firmware/tests_final/test_aes_c.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00040000 <_start>:
+   40000:	00088137          	lui	sp,0x88
+   40004:	00000097          	auipc	ra,0x0
+   40008:	00c080e7          	jalr	12(ra) # 40010 <main>
+
+0004000c <_loop>:
+   4000c:	0000006f          	j	4000c <_loop>
+
+00040010 <main>:
+   40010:	0c0d1637          	lui	a2,0xc0d1
+   40014:	800076b7          	lui	a3,0x80007
+   40018:	e0f60613          	addi	a2,a2,-497 # c0d0e0f <main+0xc090dff>
+   4001c:	08091737          	lui	a4,0x8091
+   40020:	00c6a223          	sw	a2,4(a3) # 80007004 <main+0x7ffc6ff4>
+   40024:	a0b70713          	addi	a4,a4,-1525 # 8090a0b <main+0x80509fb>
+   40028:	04050637          	lui	a2,0x4050
+   4002c:	00e6a423          	sw	a4,8(a3)
+   40030:	60760613          	addi	a2,a2,1543 # 4050607 <main+0x40105f7>
+   40034:	00010737          	lui	a4,0x10
+   40038:	00c6a623          	sw	a2,12(a3)
+   4003c:	20370713          	addi	a4,a4,515 # 10203 <_start-0x2fdfd>
+   40040:	ccddf637          	lui	a2,0xccddf
+   40044:	00e6a823          	sw	a4,16(a3)
+   40048:	eff60613          	addi	a2,a2,-257 # ccddeeff <main+0xccd9eeef>
+   4004c:	8899b737          	lui	a4,0x8899b
+   40050:	00c6aa23          	sw	a2,20(a3)
+   40054:	abb70713          	addi	a4,a4,-1349 # 8899aabb <main+0x8895aaab>
+   40058:	44556637          	lui	a2,0x44556
+   4005c:	00e6ac23          	sw	a4,24(a3)
+   40060:	67760613          	addi	a2,a2,1655 # 44556677 <main+0x44516667>
+   40064:	00112737          	lui	a4,0x112
+   40068:	00c6ae23          	sw	a2,28(a3)
+   4006c:	23370713          	addi	a4,a4,563 # 112233 <main+0xd2223>
+   40070:	02e6a023          	sw	a4,32(a3)
+   40074:	00100793          	li	a5,1
+   40078:	80007737          	lui	a4,0x80007
+   4007c:	00f72023          	sw	a5,0(a4) # 80007000 <main+0x7ffc6ff0>
+   40080:	00072783          	lw	a5,0(a4)
+   40084:	fe07dee3          	bgez	a5,40080 <main+0x70>
+   40088:	800077b7          	lui	a5,0x80007
+   4008c:	02478793          	addi	a5,a5,36 # 80007024 <main+0x7ffc7014>
+   40090:	80007737          	lui	a4,0x80007
+   40094:	0007a783          	lw	a5,0(a5)
+   40098:	02870713          	addi	a4,a4,40 # 80007028 <main+0x7ffc7018>
+   4009c:	00072703          	lw	a4,0(a4)
+   400a0:	800076b7          	lui	a3,0x80007
+   400a4:	000805b7          	lui	a1,0x80
+   400a8:	00068613          	mv	a2,a3
+   400ac:	02c6a803          	lw	a6,44(a3) # 8000702c <main+0x7ffc701c>
+   400b0:	03062883          	lw	a7,48(a2)
+   400b4:	00f5a023          	sw	a5,0(a1) # 80000 <main+0x3fff0>
+   400b8:	00e5a223          	sw	a4,4(a1)
+   400bc:	00058693          	mv	a3,a1
+   400c0:	27325637          	lui	a2,0x27325
+   400c4:	8f4b45b7          	lui	a1,0x8f4b4
+   400c8:	aa658593          	addi	a1,a1,-1370 # 8f4b3aa6 <main+0x8f473a96>
+   400cc:	88060613          	addi	a2,a2,-1920 # 27324880 <main+0x272e4870>
+   400d0:	0106a423          	sw	a6,8(a3)
+   400d4:	00b787b3          	add	a5,a5,a1
+   400d8:	00c70733          	add	a4,a4,a2
+   400dc:	00e7e7b3          	or	a5,a5,a4
+   400e0:	0116a623          	sw	a7,12(a3)
+   400e4:	04079463          	bnez	a5,4012c <main+0x11c>
+   400e8:	958507b7          	lui	a5,0x95850
+   400ec:	bd078793          	addi	a5,a5,-1072 # 9584fbd0 <main+0x9580fbc0>
+   400f0:	00f80833          	add	a6,a6,a5
+   400f4:	02081c63          	bnez	a6,4012c <main+0x11c>
+   400f8:	963b27b7          	lui	a5,0x963b2
+   400fc:	f2878793          	addi	a5,a5,-216 # 963b1f28 <main+0x96371f18>
+   40100:	00f888b3          	add	a7,a7,a5
+   40104:	02089463          	bnez	a7,4012c <main+0x11c>
+   40108:	ae510637          	lui	a2,0xae510
+   4010c:	000806b7          	lui	a3,0x80
+   40110:	00160613          	addi	a2,a2,1 # ae510001 <main+0xae4cfff1>
+   40114:	c001d737          	lui	a4,0xc001d
+   40118:	00c6a823          	sw	a2,16(a3) # 80010 <main+0x40000>
+   4011c:	afe70713          	addi	a4,a4,-1282 # c001cafe <main+0xbffdcaee>
+   40120:	00e6ac23          	sw	a4,24(a3)
+   40124:	00000513          	li	a0,0
+   40128:	00008067          	ret
+   4012c:	deadc7b7          	lui	a5,0xdeadc
+   40130:	000806b7          	lui	a3,0x80
+   40134:	eef78793          	addi	a5,a5,-273 # deadbeef <main+0xdea9bedf>
+   40138:	00f6a823          	sw	a5,16(a3) # 80010 <main+0x40000>
+   4013c:	00f6ac23          	sw	a5,24(a3)
+   40140:	00100513          	li	a0,1
+   40144:	00008067          	ret

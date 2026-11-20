@@ -1,0 +1,90 @@
+
+/home/student/Documents/honours_121/CBP/firmware/soc_c_test.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00040000 <_start>:
+   40000:	00088137          	lui	sp,0x88
+   40004:	00000097          	auipc	ra,0x0
+   40008:	00c080e7          	jalr	12(ra) # 40010 <main>
+
+0004000c <_loop>:
+   4000c:	0000006f          	j	4000c <_loop>
+
+00040010 <main>:
+   40010:	2468b7b7          	lui	a5,0x2468b
+   40014:	cf178793          	addi	a5,a5,-783 # 2468acf1 <main+0x2464ace1>
+   40018:	00080737          	lui	a4,0x80
+   4001c:	00f72023          	sw	a5,0(a4) # 80000 <main+0x3fff0>
+   40020:	000107b7          	lui	a5,0x10
+   40024:	80001737          	lui	a4,0x80001
+   40028:	fff78793          	addi	a5,a5,-1 # ffff <_start-0x30001>
+   4002c:	00f72423          	sw	a5,8(a4) # 80001008 <main+0x7ffc0ff8>
+   40030:	00872683          	lw	a3,8(a4)
+   40034:	00080737          	lui	a4,0x80
+   40038:	00d72223          	sw	a3,4(a4) # 80004 <main+0x3fff4>
+   4003c:	0af69c63          	bne	a3,a5,400f4 <main+0xe4>
+   40040:	800017b7          	lui	a5,0x80001
+   40044:	0000a737          	lui	a4,0xa
+   40048:	00478793          	addi	a5,a5,4 # 80001004 <main+0x7ffc0ff4>
+   4004c:	55a70713          	addi	a4,a4,1370 # a55a <_start-0x35aa6>
+   40050:	00e7a023          	sw	a4,0(a5)
+   40054:	0007a603          	lw	a2,0(a5)
+   40058:	000806b7          	lui	a3,0x80
+   4005c:	00c6a423          	sw	a2,8(a3) # 80008 <main+0x3fff8>
+   40060:	06e61e63          	bne	a2,a4,400dc <main+0xcc>
+   40064:	80001737          	lui	a4,0x80001
+   40068:	0a000693          	li	a3,160
+   4006c:	02d72023          	sw	a3,32(a4) # 80001020 <main+0x7ffc1010>
+   40070:	0007a683          	lw	a3,0(a5)
+   40074:	00080737          	lui	a4,0x80
+   40078:	0000a7b7          	lui	a5,0xa
+   4007c:	00d72623          	sw	a3,12(a4) # 8000c <main+0x3fffc>
+   40080:	5fa78793          	addi	a5,a5,1530 # a5fa <_start-0x35a06>
+   40084:	08f69463          	bne	a3,a5,4010c <main+0xfc>
+   40088:	800027b7          	lui	a5,0x80002
+   4008c:	06400713          	li	a4,100
+   40090:	00e7a223          	sw	a4,4(a5) # 80002004 <main+0x7ffc1ff4>
+   40094:	02800693          	li	a3,40
+   40098:	80002737          	lui	a4,0x80002
+   4009c:	00d72c23          	sw	a3,24(a4) # 80002018 <main+0x7ffc2008>
+   400a0:	0047a783          	lw	a5,4(a5)
+   400a4:	01872703          	lw	a4,24(a4)
+   400a8:	00080637          	lui	a2,0x80
+   400ac:	00f62823          	sw	a5,16(a2) # 80010 <main+0x40000>
+   400b0:	00e62a23          	sw	a4,20(a2)
+   400b4:	f9c78793          	addi	a5,a5,-100
+   400b8:	06079663          	bnez	a5,40124 <main+0x114>
+   400bc:	fd870713          	addi	a4,a4,-40
+   400c0:	06071263          	bnez	a4,40124 <main+0x114>
+   400c4:	c001d737          	lui	a4,0xc001d
+   400c8:	000807b7          	lui	a5,0x80
+   400cc:	afe70713          	addi	a4,a4,-1282 # c001cafe <main+0xbffdcaee>
+   400d0:	00e7ac23          	sw	a4,24(a5) # 80018 <main+0x40008>
+   400d4:	00000513          	li	a0,0
+   400d8:	00008067          	ret
+   400dc:	deadc737          	lui	a4,0xdeadc
+   400e0:	000807b7          	lui	a5,0x80
+   400e4:	eef70713          	addi	a4,a4,-273 # deadbeef <main+0xdea9bedf>
+   400e8:	00e7ac23          	sw	a4,24(a5) # 80018 <main+0x40008>
+   400ec:	00300513          	li	a0,3
+   400f0:	00008067          	ret
+   400f4:	deadc737          	lui	a4,0xdeadc
+   400f8:	000807b7          	lui	a5,0x80
+   400fc:	eef70713          	addi	a4,a4,-273 # deadbeef <main+0xdea9bedf>
+   40100:	00e7ac23          	sw	a4,24(a5) # 80018 <main+0x40008>
+   40104:	00200513          	li	a0,2
+   40108:	00008067          	ret
+   4010c:	deadc737          	lui	a4,0xdeadc
+   40110:	000807b7          	lui	a5,0x80
+   40114:	eef70713          	addi	a4,a4,-273 # deadbeef <main+0xdea9bedf>
+   40118:	00e7ac23          	sw	a4,24(a5) # 80018 <main+0x40008>
+   4011c:	00400513          	li	a0,4
+   40120:	00008067          	ret
+   40124:	deadc737          	lui	a4,0xdeadc
+   40128:	000807b7          	lui	a5,0x80
+   4012c:	eef70713          	addi	a4,a4,-273 # deadbeef <main+0xdea9bedf>
+   40130:	00e7ac23          	sw	a4,24(a5) # 80018 <main+0x40008>
+   40134:	00500513          	li	a0,5
+   40138:	00008067          	ret

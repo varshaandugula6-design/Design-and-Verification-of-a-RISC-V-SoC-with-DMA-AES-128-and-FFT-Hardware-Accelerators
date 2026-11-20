@@ -1,0 +1,110 @@
+================================================================
+AES + UART INTEGRATION VERIFICATION REPORT
+================================================================
+Date       : Sat Oct  3 15:04:12 2026
+Project    : Fail-Safe Railway Level-Crossing Control System
+Top Module : tb_main_top
+================================================================
+
+COMPILATION
+-----------
+Command:
+  vcs -full64 -sverilog \
+      -timescale=1ns/1ps \
+      -f run_integration.f \
+      -top tb_main_top \
+      -o integration_results/simv_main \
+      -l integration_results/compile.log \
+      -P $VERDI_HOME/share/PLI/VCS/linux64/novas.tab \
+      $VERDI_HOME/share/PLI/VCS/linux64/pli.a
+
+Result     : PASS (0 errors, 1 warning about coerced inout ports)
+Modules    : 7 modules recompiled
+
+SIMULATION
+----------
+Command:
+  ./simv_main -no_save +fsdbfile+./aes_uart_integration.fsdb
+
+Sim Time   : 350,555 ns
+Result     : PASS
+
+FILELIST USED: run_integration.f
+TESTBENCH   : tb/tb_main_top.sv
+
+CORRECTIONS MADE TO FILELIST (non-RTL fixes only):
+1. +incdir+ path for UART headers changed from:
+     /home/STUDENT/Documents/168_Honours/UART/src/include   (BROKEN PATH)
+   to:
+     /home/student/Documents/hon_121/pro_dir/rtl/uart/include (WORKING)
+2. Added +incdir+../rtl/verilog_aes to resolve `include "timescale.v" in AES core files
+3. Added -timescale=1ns/1ps to provide default timescale for UART files (no `timescale directive)
+4. Added Verdi PLI (-P novas.tab + pli.a) to enable $fsdbDumpfile/$fsdbDumpvars
+
+ADDRESS MAP
+-----------
+AES  Base Address  : 0x8000_7000 (S5 / M05)
+UART Base Address  : 0x8000_3000 (S4 / M04)
+IMEM Base Address  : 0x0004_0000 (S0 / M00)
+DMEM Base Address  : 0x0008_0000 (S1 / M01)
+GPIO Base Address  : 0x8000_1000 (S2 / M02)
+Timer Base Address : 0x8000_2000 (S3 / M03)
+WDT  Base Address  : 0x8000_4000 (S11/ M11)
+ADC  Base Address  : 0x8000_5000 (S12/ M12)
+DMA  Base Address  : 0x8000_6000 (S13/ M13)
+
+AXI MASTER USED IN TB : M1 (s01_axi / VeeR LSU port)
+UART Slave Port       : S4 / M04 (internal to main_top)
+AES  Slave Port       : S5 / M05 (internal to main_top, via aes_axi_slave_axi4)
+
+TEST RESULTS
+------------
+Total Checks  : 65
+Passed Checks : 65
+Failed Checks : 0
+
+SCENARIO BREAKDOWN
+Scenario  1: Reset & Idle State            - 4/4   PASS
+Scenario  2: Unmapped DECERR               - 4/4   PASS
+Scenario  3: Crossbar Routing              - 12/12 PASS
+Scenario  4: UART DLAB & Baud Setup        - 6/6   PASS
+Scenario  5: UART TX Transmission 0xA5    - 3/3   PASS
+Scenario  6: UART RX Reception 0x5A       - 4/4   PASS
+Scenario  7: UART IRQ Behavior             - 6/6   PASS
+Scenario  8: AXI Handshake Backpressure   - 5/5   PASS
+Scenario  9: AXI ID Preservation          - 4/4   PASS
+Scenario 10: Unsupported Bursts            - 3/3   PASS
+Scenario 11: Mid-Activity Reset Recovery  - 2/2   PASS
+Scenario 12: AES-128 Encryption (via S5)  - 4/4   PASS
+Scenario 13: AES-128 Decryption (via S5)  - 4/4   PASS
+
+AES ENCRYPTION TEST VECTOR (FIPS-197 Appendix B):
+  KEY      : 000102030405060708090a0b0c0d0e0f
+  PLAINTEXT: 00112233445566778899aabbccddeeff
+  EXPECTED : 69c4e0d86a7b0430d8cdb78070b4c55a
+  GOT      : 69c4e0d86a7b0430d8cdb78070b4c55a  MATCH
+
+AES DECRYPTION (Inverse Cipher):
+  INPUT    : 69c4e0d86a7b0430d8cdb78070b4c55a
+  EXPECTED : 00112233445566778899aabbccddeeff (original plaintext)
+  GOT      : 00112233445566778899aabbccddeeff  MATCH
+
+WAVEFORM
+--------
+FSDB File  : integration_results/aes_uart_integration.fsdb  (119 KB)
+Contains   : All signals from tb_main_top and all sub-modules
+
+WARNINGS
+--------
+1. (Benign) Rocky Linux 8.10 not officially supported by VCS U-2023.03
+2. (Benign) ASLR detected - use -no_save to avoid re-exec
+3. (Benign) $fsdbfile name override from +fsdbfile+ runtime option
+4. (Info)   Ports coerced to inout (not a simulation error)
+
+AXI PROTOCOL ERRORS : NONE
+X/Z PROPAGATION     : NONE observed on functional paths
+DEADLOCKS           : NONE (all transactions completed within timeout)
+
+VERDI COMMAND TO VIEW WAVEFORM:
+  verdi -ssf integration_results/aes_uart_integration.fsdb &
+

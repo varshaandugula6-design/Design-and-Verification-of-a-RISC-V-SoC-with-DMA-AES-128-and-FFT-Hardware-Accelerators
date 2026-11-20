@@ -1,0 +1,375 @@
+Command: /home/student/Documents/honours_121/CBP/run/./simv -no_save -l baseline_after_rtl_fixes.log
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03_Full64; Runtime version U-2023.03_Full64;  Oct 31 11:48 2026
+Addressing configuration for axi_interconnect instance tb_main_top.dut.u_axi_interconnect_3x15.axi_interconnect_inst
+ 0 ( 0): 00040000 / 17 -- 00040000-0005ffff
+ 1 ( 0): 00080000 / 17 -- 00080000-0009ffff
+ 2 ( 0): 80001000 / 12 -- 80001000-80001fff
+ 3 ( 0): 80002000 / 12 -- 80002000-80002fff
+ 4 ( 0): 80003000 / 12 -- 80003000-80003fff
+ 5 ( 0): 80007000 / 12 -- 80007000-80007fff
+ 6 ( 0): 80008000 / 12 -- 80008000-80008fff
+ 7 ( 0): 80009000 / 12 -- 80009000-80009fff
+11 ( 0): 80004000 / 12 -- 80004000-80004fff
+12 ( 0): 80005000 / 12 -- 80005000-80005fff
+13 ( 0): 80006000 / 12 -- 80006000-80006fff
+*Verdi* Loading libsscore_vcs202303.so
+FSDB Dumper for VCS, Release Verdi_U-2023.03-SP1, Linux x86_64/64bit, 05/28/2023
+(C) 1996 - 2023 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'main_top.fsdb'
+*Verdi* : Begin traversing the scope (tb_main_top), layer (0).
+*Verdi* : End of traversing.
+================================================================================
+          STARTING EXHAUSTIVE VERIFICATION OF 3x15 AXI + UART TOP               
+          TEST MODE : ALL
+================================================================================
+
+[SCENARIO 1] Verifying Reset & Initial Idle Conditions...
+[PASS] Reset State: uart_tx remains High (Idle)
+[PASS] Reset State: uart_irq is Low (Inactive)
+[PASS] Reset State: gpio_irq is Low (Inactive)
+[PASS] Reset State: timer_irq is Low (Inactive)
+[PASS] Reset State: timer_pwm is Low (Inactive)
+[PASS] Post-Reset: uart_tx remains High (Idle)
+[PASS] Post-Reset: uart_irq remains Low
+[PASS] Post-Reset: gpio_irq remains Low
+[PASS] Post-Reset: timer_irq remains Low
+[PASS] Post-Reset: timer_pwm remains Low
+
+[SCENARIO 2] Verifying Unmapped Address Decoding (DECERR = 2'b11)...
+[PASS] Unmapped Write High (0x9000_0000): Returns DECERR (2'b11)
+[PASS] Unmapped Write High: Preserves Transaction ID (0xA1)
+[PASS] Unmapped Read High (0x9000_0000): Returns DECERR (2'b11)
+[PASS] Unmapped Read High: Read data is 0
+[PASS] Unmapped Write Low (0x0001_0000): Returns DECERR (2'b11)
+[PASS] Unmapped Read Low (0x0001_0000): Returns DECERR (2'b11)
+
+[SCENARIO 3] Verifying Crossbar Routing for Masters (M0, M1, M2) & Slaves...
+[PASS] Routing: M1 -> S0 (IMEM) Write Returns OKAY
+[PASS] Routing: M1 -> S0 (IMEM) Read Returns OKAY
+[PASS] Routing: M1 -> S0 (IMEM) Read Signature Valid
+[PASS] Routing: M1 -> S1 (DMEM) Write Returns OKAY
+[PASS] Routing: M1 -> S1 (DMEM) Read Returns OKAY
+[PASS] Routing: M1 -> S1 (DMEM) Read Signature Valid
+[PASS] Routing: M1 -> S2 (GPIO) Write Returns OKAY
+[PASS] Routing: M1 -> S2 (GPIO) Read Returns OKAY
+[PASS] Routing: M1 -> S2 (GPIO) Read Matches Written
+[PASS] Routing: M1 -> S3 (Timer) Write Returns OKAY
+[PASS] Routing: M1 -> S3 (Timer) Read Returns OKAY
+[PASS] Routing: M1 -> S3 (Timer) Read Matches Written
+[PASS] Routing: M0 (VeeR IFU) -> S4 (UART) Read Returns OKAY
+[PASS] Routing: M2 (DMA) -> S4 (UART) Read Returns OKAY
+
+[SCENARIO 4] Verifying UART DLAB & 115200 Baud Divisor Setup...
+[PASS] UART: Write IER=0x00 with DLAB=0 Returns OKAY
+[PASS] UART: Write LCR=0x83 (Enable DLAB) Returns OKAY
+[PASS] UART: Write Baud Divisor (347) Returns OKAY
+[PASS] UART: Write LCR=0x03 (Disable DLAB) Returns OKAY
+[PASS] UART: Verify normal register access restored (LSR Read OKAY)
+[PASS] UART: Verify THRE=1 in LSR
+
+[SCENARIO 5] Verifying UART TX Transmission at 115200 Baud (Byte = 0xA5)...
+[PASS] UART TX: Write byte 0xA5 to THR Returns OKAY
+[UART_TB_TX] Detected START bit transition at time 1891000
+[UART_TB_TX] Sampled bit 0 = 1 at time 14942000
+[UART_TB_TX] Sampled bit 1 = 0 at time 23642000
+[UART_TB_TX] Sampled bit 2 = 1 at time 32342000
+[UART_TB_TX] Sampled bit 3 = 0 at time 41042000
+[UART_TB_TX] Sampled bit 4 = 0 at time 49742000
+[UART_TB_TX] Sampled bit 5 = 1 at time 58442000
+[UART_TB_TX] Sampled bit 6 = 0 at time 67142000
+[UART_TB_TX] Sampled bit 7 = 1 at time 75842000
+[UART_TB_TX] Sampled STOP bit = 1 (valid) at time 84542000
+[UART_TB_TX] Successfully decoded TX byte = 0xa5
+[PASS] UART TX: Serial frame format (START & STOP bits) valid
+[PASS] UART TX: Decoded byte exactly matches transmitted byte (0xA5)
+[PASS] UART TX: LSR bit 5 (THRE) is set
+
+[SCENARIO 6] Verifying UART RX Reception at 115200 Baud (Byte = 0x5A)...
+[PASS] UART RX: Write IER=0x01 to enable DATA_READY in LSR
+[UART_TB_RX] Injecting byte 0x5a over serial uart_rx (bit period = 347 fixed_clk cycles)...
+[UART_TB_RX] Finished serial injection for byte 0x5a at time 171441000
+[PASS] UART RX: LSR bit 0 (DATA_READY) asserted
+[PASS] UART RX: Read RBR Returns OKAY
+[PASS] UART RX: Received byte matches injected byte (0x5A)
+[PASS] UART RX: LSR bit 0 cleared after reading RBR
+
+[SCENARIO 7] Verifying UART Interrupt Behavior (IER=0 vs IER=1)...
+[UART_TB_RX] Injecting byte 0x3c over serial uart_rx (bit period = 347 fixed_clk cycles)...
+[UART_TB_RX] Finished serial injection for byte 0x3c at time 258591000
+[PASS] UART IRQ: With IER=0, uart_irq remains deasserted (0)
+[PASS] UART IRQ: Flushed RBR byte (0x3C)
+[PASS] UART IRQ: Write IER=0x01 Returns OKAY
+[UART_TB_RX] Injecting byte 0x7e over serial uart_rx (bit period = 347 fixed_clk cycles)...
+[UART_TB_RX] Finished serial injection for byte 0x7e at time 345591000
+[PASS] UART IRQ: With IER=1, uart_irq asserts High upon byte reception
+[PASS] UART IRQ: Read received byte (0x7E)
+[PASS] UART IRQ: uart_irq deasserts Low after reading RBR
+
+[SCENARIO 8] Verifying AXI Handshake Ordering & Backpressure Edge Cases...
+[PASS] Handshake: AW asserted 5 cycles before W completes cleanly (OKAY)
+[PASS] Handshake: W asserted 5 cycles before AW completes cleanly (OKAY)
+[PASS] Handshake: BREADY backpressure delay handled cleanly (OKAY)
+[PASS] Handshake: RREADY backpressure delay handled cleanly (OKAY)
+[PASS] Handshake: Read data valid after delayed RREADY (THRE=1)
+
+[SCENARIO 9] Verifying AXI Transaction ID Preservation...
+[PASS] ID Preservation: Write ID 0xA8 returned in BID
+[PASS] ID Preservation: Read ID 0xD4 returned in RID
+[PASS] ID Preservation: Write ID 0xFE returned in BID
+[PASS] ID Preservation: Read ID 0x7B returned in RID
+
+[SCENARIO 10] Testing Unsupported Bursts (AWLEN > 0, ARLEN > 0)...
+[PASS] Unsupported Burst Write: Completes without hang
+[PASS] Unsupported Burst Read: Completes without hang
+[PASS] UART Integrity: LSR readable & valid after burst attempts
+
+[SCENARIO 11] Verifying System Reset During Activity & Clean Recovery...
+[PASS] Reset Recovery: Write to LCR post-reset returns OKAY
+[PASS] Reset Recovery: Read from LSR post-reset returns OKAY
+
+[SCENARIO 12] AES-128 Encryption through AXI Interconnect S5/M05...
+  AES_BASE = 0x80007000  (S5 / M05)
+  KEY  = 000102030405060708090a0b0c0d0e0f
+  PLAIN= 00112233445566778899aabbccddeeff
+  EXP  = 69c4e0d86a7b0430d8cdb78070b4c55a
+  [12.1] Writing AES key registers...
+  [12.2] Writing plaintext registers...
+  [12.3] Starting encryption (CSR[0]=1)...
+  [12.4] Polling CSR for DONE bit...
+  [12.4] Encryption DONE asserted.
+  [12.5] Reading ciphertext...
+[PASS] AES ENC: TOUT0 = 70b4c55a
+[PASS] AES ENC: TOUT1 = d8cdb780
+[PASS] AES ENC: TOUT2 = 6a7b0430
+[PASS] AES ENC: TOUT3 = 69c4e0d8
+  [12] AES Encryption scenario: PASS
+
+[SCENARIO 13] AES-128 Decryption through AXI Interconnect S5/M05...
+  INV_BASE = 0x80007100  (S5 / M05, inv-cipher region)
+  [13.1] Writing inverse-cipher key registers...
+  [13.2] Triggering inverse key expansion (CSR[1]=1)...
+  [13.3] Polling CSR for KDONE bit...
+  [13.3] Key expansion DONE.
+  [13.4] Writing ciphertext to inv-cipher TEXT_IN...
+  [13.5] Starting decryption (CSR[0]=1)...
+  [13.6] Polling CSR for DONE bit...
+  [13.6] Decryption DONE asserted.
+  [13.7] Reading decrypted plaintext...
+[PASS] AES DEC: TOUT0 == original TIN0 (ccddeeff)
+[PASS] AES DEC: TOUT1 == original TIN1 (8899aabb)
+[PASS] AES DEC: TOUT2 == original TIN2 (44556677)
+[PASS] AES DEC: TOUT3 == original TIN3 (00112233)
+  [13] AES Decryption scenario: PASS
+
+[SCENARIO 14] FFT Control Interface Verification (S6 / 0x8000_8000)...
+  [14.1] Read FFT STATUS register (expect 0x00000000 after reset)...
+[PASS] FFT STATUS RRESP == OKAY after reset
+[PASS] FFT STATUS bit[1:0] == 2'b00 after reset (not busy, not done)
+  [14.2] Read FFT CTRL register (expect 0x00000000)...
+[PASS] FFT CTRL RRESP == OKAY
+[PASS] FFT CTRL RDATA == 32'h0
+  [14.3] Write FFT CTRL bit[0]=0 (no-op, expect OKAY)...
+[PASS] FFT CTRL write 0 BRESP == OKAY
+  [14.4] Write FFT CTRL+8 (invalid offset, expect SLVERR)...
+[PASS] FFT invalid offset BRESP == SLVERR (2'b10)
+  [14.5] Read FFT CTRL+8 (invalid offset, expect SLVERR)...
+[PASS] FFT invalid offset RRESP == SLVERR (2'b10)
+[PASS] FFT invalid offset RDATA == 32'hDEADBEEF
+  [14.6] Check fft_irq is not X/Z after reset...
+[PASS] fft_irq not X/Z after reset
+[PASS] fft_irq == 0 after reset (no FFT triggered)
+  [14] FFT Control Interface: PASS
+
+[SCENARIO 15] FFT Memory Interface Verification (S7 / 0x8000_9000)...
+  [15.1] Write sample[0] = 0x00004000 (real=+0.5 Q1.15, imag=0)...
+[PASS] FFT MEM sample[0] write BRESP == OKAY
+  [15.2] Read back sample[0]...
+[PASS] FFT MEM sample[0] read RRESP == OKAY
+[PASS] FFT MEM sample[0] readback == 0x00004000
+  [15.3] Write sample[1] = 0x20000000 (real=0, imag=+0.25 Q1.15)...
+[PASS] FFT MEM sample[1] write BRESP == OKAY
+  [15.4] Read back sample[1]...
+[PASS] FFT MEM sample[1] read RRESP == OKAY
+[PASS] FFT MEM sample[1] readback == 0x20000000
+  [15.5] Write sample[3] = 0x1000_8000 (imag=+0.125, real=-1.0 Q1.15)...
+[PASS] FFT MEM sample[3] write BRESP == OKAY
+[PASS] FFT MEM sample[3] readback == 0x10008000
+  [15.6] Access beyond S7 aperture (expect DECERR/SLVERR, no hang)...
+[PASS] FFT MEM out-of-aperture RRESP != OKAY (should be DECERR or SLVERR)
+  [15] FFT Memory Interface: PASS
+
+[SCENARIO 16] FFT Functional Execution Verification (N=1024 impulse)...
+  Test vector: impulse at sample[0] = {imag=0, real=0x4000 (+0.5 Q1.15)}
+  All other 1023 samples = 0x0000_0000
+  Expected output[k] = {0x0000, 0x0010} for all k=0..1023
+  [16.1] Verify FFT is idle before loading samples...
+[PASS] FFT STATUS busy==0 before load
+  [16.2] Zeroing all 1024 samples via S7 (may take ~1024 AXI writes)...
+[PASS] FFT MEM: all 1024 samples zeroed without error
+  [16.3] Write impulse at sample[0] = 0x00004000...
+[PASS] FFT MEM impulse write BRESP == OKAY
+  [16.4] Readback sample[0] before start...
+[PASS] FFT MEM sample[0] pre-start readback == 0x00004000
+  [16.5] START FFT: write 1 to CTRL register 0x8000_8000...
+[PASS] FFT CTRL START write BRESP == OKAY
+  [16.6] Polling FFT STATUS[0] (done_sticky) until set...
+  FFT completed after 3989 status polls (~3989 cycles)
+[PASS] FFT STATUS done_sticky == 1 after completion
+[PASS] FFT STATUS busy == 0 after completion
+  [16.7] fft_irq behaviour: confirmed via done_sticky latch.
+[PASS] fft_irq not X/Z after FFT execution
+  [16.8] Read output sample[0] (expect {imag=0x0000, real=0x0010})...
+[PASS] FFT output sample[0] RRESP == OKAY
+[PASS] FFT output sample[0] real part == 0x0010
+[PASS] FFT output sample[0] imag part == 0x0000
+  [16.9] Read output sample[512] (expect {imag=0x0000, real=0x0010})...
+[PASS] FFT output sample[512] RRESP == OKAY
+[PASS] FFT output sample[512] real part == 0x0010
+[PASS] FFT output sample[512] imag part == 0x0000
+  [16.10] Post-run: STATUS should show done_sticky=1, busy=0...
+[PASS] FFT STATUS done_sticky still 1 after read (sticky latch)
+  [16] FFT Functional Execution: PASS
+
+[SCENARIO 17] DMA Integration: Reset, CSR, Mem-to-Mem Transfer...
+  DMA_BASE = 0x80006000  (S13 / M13)
+  [17.A] DMA reset and idle state check...
+[PASS] DMA IRQ low after reset
+[PASS] DMA error IRQ low after reset
+  [17.A] DMA Reset check: PASS
+  [17.B] DMA CSR register access via S13 (0x8000_6000)...
+[PASS] DMA CSR: STATUS read returns OKAY
+[PASS] DMA CSR: STATUS done=0 at reset
+[PASS] DMA CSR: CONTROL write returns OKAY
+[PASS] DMA CSR: CONTROL readback OKAY
+[PASS] DMA CSR: max_burst=8 readback
+  [17.B] DMA CSR access: PASS
+  [17.C] DMA mem-to-mem: IMEM(0x00040000) -> DMEM(0x00080100), 16 bytes...
+[PASS] DMA CFG: src addr write OKAY
+[PASS] DMA CFG: dst addr write OKAY
+[PASS] DMA CFG: num_bytes write OKAY
+[PASS] DMA CFG: desc0 enable write OKAY
+[PASS] DMA START: CONTROL.go write OKAY
+[PASS] DMA XFER: dma_irq asserts (done) within 10000 cycles
+[PASS] DMA XFER: STATUS.done=1 in register
+[PASS] DMA XFER: no error IRQ
+[PASS] DMA XFER: dest word[0] data match
+[PASS] DMA XFER: dest word[1] data match
+[PASS] DMA XFER: dest word[2] data match
+[PASS] DMA XFER: dest word[3] data match
+  [17.C] DMA Mem-to-Mem transfer: PASS
+  [17] DMA Integration: PASS
+
+[SCENARIO 18] GPIO Controller Verification (S2 / 0x8000_1000)...
+  [18.1] Setting direction (lower 16 outputs, upper 16 inputs)...
+[PASS] GPIO: Write DIR returns OKAY
+[PASS] GPIO: Read DIR returns OKAY
+[PASS] GPIO: DIR readback matches (0x0000_FFFF)
+  [18.2] Writing output data 0x0000_A55A...
+[PASS] GPIO: Write DATA_O returns OKAY
+[PASS] GPIO: Read DATA_O returns OKAY
+[PASS] GPIO: DATA_O readback matches (0x0000_A55A)
+[PASS] GPIO: Output pins [15:0] match 0xA55A
+  [18.3] Testing atomic SET register (0x8000_1020)...
+[PASS] GPIO: SET_O write returns OKAY
+[PASS] GPIO: DATA_O after SET matches 0x0000_A5FA
+  [18.4] Testing atomic CLR register (0x8000_1024)...
+[PASS] GPIO: CLR_O write returns OKAY
+[PASS] GPIO: DATA_O after CLR matches 0x0000_A5F0
+  [18.5] Testing atomic TGL register (0x8000_1028)...
+[PASS] GPIO: TGL_O write returns OKAY
+[PASS] GPIO: DATA_O after TGL matches 0x0000_A500
+  [18.6] Testing Input Pin Reading via DATA_I (0x8000_1000)...
+[PASS] GPIO: Disable debouncer write returns OKAY
+[PASS] GPIO: DATA_I read returns OKAY
+[PASS] GPIO: DATA_I inputs [31:16] match driven 0x5A3D
+  [18.7] Testing GPIO Level Interrupt on Pin 16...
+[PASS] GPIO: IRQ asserts when pin 16 is High
+[PASS] GPIO: IRQ deasserts when pin 16 is Low
+  [18] GPIO Controller Integration: PASS
+
+[SCENARIO 19] Real-Time Timer Verification (S3 / 0x8000_2000)...
+  [19.1] Verifying LOAD and CMP register accesses...
+[PASS] Timer: LOAD write returns OKAY
+[PASS] Timer: LOAD read returns OKAY
+[PASS] Timer: LOAD readback matches (100)
+[PASS] Timer: CMP write returns OKAY
+[PASS] Timer: CMP read returns OKAY
+[PASS] Timer: CMP readback matches (40)
+  [19.2] Testing Down-Counter & Expire Interrupt...
+[PASS] Timer: Start write returns OKAY
+[PASS] Timer: VAL is active (<= 25)
+[PASS] Timer: Expire interrupt asserts within timeout
+[PASS] Timer: INT_STS[0] is set
+[PASS] Timer: Interrupt cleared after W1C
+  [19.3] Testing Periodic PWM Output Generation...
+[PASS] Timer: PWM generates High pulses
+[PASS] Timer: PWM generates Low pulses
+[PASS] Timer: PWM is Low when stopped
+  [19] Real-Time Timer Integration: PASS
+
+[SCENARIO 20] RISC-V VeeR EL2 Execution & SoC Peripheral Integration...
+  [20.1] Releasing CPU Reset (cpu_rst_l = 1'b1, Boot Vector = 0x0004_0000)...
+    [VeeR TRACE #01] PC = 0x00040000 | Insn = 0x123450b7
+    [VeeR TRACE #02] PC = 0x00040004 | Insn = 0x6780e093
+    [VeeR TRACE #03] PC = 0x00040008 | Insn = 0x00080137
+    [VeeR TRACE #04] PC = 0x0004000c | Insn = 0x00112023
+    [VeeR TRACE #05] PC = 0x00040010 | Insn = 0x00012183
+    [VeeR TRACE #06] PC = 0x00040014 | Insn = 0x00118213
+    [VeeR TRACE #07] PC = 0x00040018 | Insn = 0x00412223
+    [VeeR TRACE #08] PC = 0x0004001c | Insn = 0x800012b7
+    [VeeR TRACE #09] PC = 0x00040020 | Insn = 0x0000a337
+    [VeeR TRACE #10] PC = 0x00040024 | Insn = 0x55536313
+    [VeeR TRACE #11] PC = 0x00040028 | Insn = 0x0062a423
+    [VeeR TRACE #12] PC = 0x0004002c | Insn = 0x0082a383
+    [VeeR TRACE #13] PC = 0x00040030 | Insn = 0x00712423
+    [VeeR TRACE #14] PC = 0x00040034 | Insn = 0x80002437
+    [VeeR TRACE #15] PC = 0x00040038 | Insn = 0x0fa00493
+    [VeeR TRACE #16] PC = 0x0004003c | Insn = 0x00942223
+    [VeeR TRACE #17] PC = 0x00040040 | Insn = 0x00442503
+    [VeeR TRACE #18] PC = 0x00040044 | Insn = 0x00a12623
+    [VeeR TRACE #19] PC = 0x00040048 | Insn = 0x55aa55b7
+    [VeeR TRACE #20] PC = 0x0004004c | Insn = 0x5aa5e593
+    [VeeR TRACE #21] PC = 0x00040050 | Insn = 0x00b12823
+  [20.2] VeeR Execution Finished Successfully at cycle 828 (Retired 21 instructions)!
+[PASS] VeeR: Test program completed without timeout
+[PASS] VeeR: Instruction trace retired instructions
+[PASS] VeeR: LSU Write to DMEM[0] = 0x1234_5678
+[PASS] VeeR: LSU Read + ALU Add + Write to DMEM[1] = 0x1234_5679
+[PASS] VeeR: Memory-Mapped Peripheral Access S2 GPIO (0x0000_A555)
+[PASS] VeeR: Memory-Mapped Peripheral Access S3 TIMER (0x0000_00FA / 250)
+[PASS] VeeR: Execution Completion Signature DMEM[4] = 0x55AA_55AA
+  [20] RISC-V VeeR EL2 Core Integration: PASS
+
+================================================================================
+                         VERIFICATION SCOREBOARD SUMMARY                        
+================================================================================
+  TOTAL CHECKS  : 165
+  PASSED CHECKS : 165
+  FAILED CHECKS : 0
+================================================================================
+  UART TEST (S4/M04)             : PASS
+  AES ENCRYPTION (S5/M05)        : PASS
+  AES DECRYPTION (S5/M05)        : PASS
+  FFT CTRL INTERFACE (S6/M06)    : PASS
+  FFT MEM INTERFACE (S7/M07)     : PASS
+  FFT FUNCTIONAL EXECUTION       : PASS
+  DMA RESET (S13/M2)             : PASS
+  DMA CSR ACCESS (S13/M2)        : PASS
+  DMA MEM-TO-MEM XFER (M2)       : PASS
+  GPIO CONTROLLER (S2/M02)       : PASS
+  REAL-TIME TIMER (S3/M03)       : PASS
+  RISC-V VEER EL2 CORE (M0/M1)   : PASS
+  AXI INTERCONNECT (3x15)        : PASS
+================================================================================
+  >>> OVERALL TEST      : PASS <<<
+================================================================================
+
+$finish called from file "../tb/tb_main_top.sv", line 3077.
+$finish at simulation time            819095000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 819095000 ps
+CPU Time:      4.860 seconds;       Data structure size:   1.7Mb
+Sat Oct 31 11:48:23 2026

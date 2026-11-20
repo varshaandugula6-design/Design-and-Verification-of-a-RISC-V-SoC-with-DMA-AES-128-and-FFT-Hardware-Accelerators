@@ -1,0 +1,245 @@
+Command: /home/student/Documents/honours_121/CBP/tb/uvm_soc/./simv_uvm_fsdb +UVM_VERBOSITY=UVM_MEDIUM +FSDB +VCD -l gpio_data_121_to_130_simulation.log
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03_Full64; Runtime version U-2023.03_Full64;  Nov  7 16:28 2026
+UVM_INFO /home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+Addressing configuration for axi_interconnect instance tb_soc_uvm_top.dut.u_axi_interconnect_3x15.axi_interconnect_inst
+ 0 ( 0): 00040000 / 17 -- 00040000-0005ffff
+ 1 ( 0): 00080000 / 17 -- 00080000-0009ffff
+ 2 ( 0): 80001000 / 12 -- 80001000-80001fff
+ 3 ( 0): 80002000 / 12 -- 80002000-80002fff
+ 4 ( 0): 80003000 / 12 -- 80003000-80003fff
+ 5 ( 0): 80007000 / 12 -- 80007000-80007fff
+ 6 ( 0): 80008000 / 12 -- 80008000-80008fff
+ 7 ( 0): 80009000 / 12 -- 80009000-80009fff
+11 ( 0): 80004000 / 12 -- 80004000-80004fff
+12 ( 0): 80005000 / 12 -- 80005000-80005fff
+13 ( 0): 80006000 / 12 -- 80006000-80006fff
+*Verdi* Loading libsscore_vcs202303.so
+FSDB Dumper for VCS, Release Verdi_U-2023.03-SP1, Linux x86_64/64bit, 05/28/2023
+(C) 1996 - 2023 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'gpio_data_121_to_130.fsdb'
+*Verdi* : Begin traversing the scope (tb_soc_uvm_top), layer (0).
+*Verdi* : Enable +all, +struct and +mda dumping.
+*Verdi* : End of traversing.
+UVM_INFO @ 0: reporter [RNTST] Running test soc_uvm_test...
+UVM_INFO soc_uvm_env.sv(48) @ 0: uvm_test_top.env [SOC_ENV] Building SoC UVM Environment...
+UVM_INFO soc_uvm_env.sv(66) @ 0: uvm_test_top.env [SOC_ENV] Connecting analysis ports to scoreboards and sequencers...
+UVM_INFO vip/pwm_vip/pwm_driver.sv(28) @ 0: uvm_test_top.env.pwm_agt.drv [PWM_DRV] PWM VIP is passive monitor-only; driver quiescent.
+UVM_INFO soc_uvm_test.sv(80) @ 0: uvm_test_top [SOC_TEST] ==================================================
+UVM_INFO soc_uvm_test.sv(81) @ 0: uvm_test_top [SOC_TEST]   STARTING SoC UVM VIP INTEGRATION TEST SUITE    
+UVM_INFO soc_uvm_test.sv(82) @ 0: uvm_test_top [SOC_TEST] ==================================================
+UVM_INFO vip/pwm_vip/pwm_monitor.sv(40) @ 105000: uvm_test_top.env.pwm_agt.mon [PWM_MON] Reset released; PWM monitor active.
+UVM_INFO vip/uart_vip/uart_driver.sv(38) @ 105000: uvm_test_top.env.uart_agt.drv [UART_DRV] Reset released; UART driver active (idle high).
+UVM_INFO vip/uart_vip/uart_monitor.sv(45) @ 105000: uvm_test_top.env.uart_agt.mon [UART_MON] Reset released; UART monitor active.
+UVM_INFO vip/gpio_vip/gpio_driver.sv(41) @ 105000: uvm_test_top.env.gpio_agt.drv [GPIO_DRV] Reset released; GPIO driver active.
+UVM_INFO vip/gpio_vip/gpio_monitor.sv(44) @ 105000: uvm_test_top.env.gpio_agt.mon [GPIO_MON] Reset released; GPIO monitor active.
+UVM_INFO soc_uvm_test.sv(87) @ 205000: uvm_test_top [SOC_TEST] [TEST STEP 1] SoC reset released. Interconnect active.
+UVM_INFO soc_uvm_test.sv(92) @ 205000: uvm_test_top [SOC_TEST] [TEST STEP 2] Beginning GPIO Verification with GPIO VIP (Values 121 to 130)...
+UVM_INFO soc_uvm_test.sv(95) @ 205000: uvm_test_top [SOC_TEST]   [2.1] Configuring GPIO DIR=0 (all inputs) and DEB_EN=0...
+UVM_INFO soc_uvm_test.sv(100) @ 465000: uvm_test_top [SOC_TEST]   [2.2] Registering expected decimal values 121 to 130 in GPIO Scoreboard...
+UVM_INFO soc_uvm_test.sv(106) @ 465000: uvm_test_top [SOC_TEST]   [2.3] Executing GPIO Sequence driving sequential values 121 to 130...
+[GPIO_DRV] Transaction=1 Decimal=121 Hex=0x00000079
+UVM_INFO vip/gpio_vip/gpio_driver.sv(53) @ 465000: uvm_test_top.env.gpio_agt.drv [GPIO_DRV] Transaction=1 Decimal=121 Hex=0x00000079
+[GPIO_MON] Transaction=1 Decimal=121 Hex=0x00000079
+UVM_INFO vip/gpio_vip/gpio_monitor.sv(58) @ 475000: uvm_test_top.env.gpio_agt.mon [GPIO_MON] Transaction=1 Decimal=121 Hex=0x00000079
+[GPIO_SB] Transaction=1 Expected=0x00000079 Actual=0x00000079 STATUS=PASS
+UVM_INFO scoreboards/gpio_scoreboard.sv(81) @ 475000: uvm_test_top.env.gpio_sb [GPIO_SB] Transaction=1 Expected=0x00000079 Actual=0x00000079 STATUS=PASS
+[GPIO_DRV] Transaction=2 Decimal=122 Hex=0x0000007a
+UVM_INFO vip/gpio_vip/gpio_driver.sv(53) @ 575000: uvm_test_top.env.gpio_agt.drv [GPIO_DRV] Transaction=2 Decimal=122 Hex=0x0000007a
+[GPIO_MON] Transaction=2 Decimal=122 Hex=0x0000007a
+UVM_INFO vip/gpio_vip/gpio_monitor.sv(58) @ 585000: uvm_test_top.env.gpio_agt.mon [GPIO_MON] Transaction=2 Decimal=122 Hex=0x0000007a
+[GPIO_SB] Transaction=2 Expected=0x0000007a Actual=0x0000007a STATUS=PASS
+UVM_INFO scoreboards/gpio_scoreboard.sv(81) @ 585000: uvm_test_top.env.gpio_sb [GPIO_SB] Transaction=2 Expected=0x0000007a Actual=0x0000007a STATUS=PASS
+[GPIO_DRV] Transaction=3 Decimal=123 Hex=0x0000007b
+UVM_INFO vip/gpio_vip/gpio_driver.sv(53) @ 685000: uvm_test_top.env.gpio_agt.drv [GPIO_DRV] Transaction=3 Decimal=123 Hex=0x0000007b
+[GPIO_MON] Transaction=3 Decimal=123 Hex=0x0000007b
+UVM_INFO vip/gpio_vip/gpio_monitor.sv(58) @ 695000: uvm_test_top.env.gpio_agt.mon [GPIO_MON] Transaction=3 Decimal=123 Hex=0x0000007b
+[GPIO_SB] Transaction=3 Expected=0x0000007b Actual=0x0000007b STATUS=PASS
+UVM_INFO scoreboards/gpio_scoreboard.sv(81) @ 695000: uvm_test_top.env.gpio_sb [GPIO_SB] Transaction=3 Expected=0x0000007b Actual=0x0000007b STATUS=PASS
+[GPIO_DRV] Transaction=4 Decimal=124 Hex=0x0000007c
+UVM_INFO vip/gpio_vip/gpio_driver.sv(53) @ 795000: uvm_test_top.env.gpio_agt.drv [GPIO_DRV] Transaction=4 Decimal=124 Hex=0x0000007c
+[GPIO_MON] Transaction=4 Decimal=124 Hex=0x0000007c
+UVM_INFO vip/gpio_vip/gpio_monitor.sv(58) @ 805000: uvm_test_top.env.gpio_agt.mon [GPIO_MON] Transaction=4 Decimal=124 Hex=0x0000007c
+[GPIO_SB] Transaction=4 Expected=0x0000007c Actual=0x0000007c STATUS=PASS
+UVM_INFO scoreboards/gpio_scoreboard.sv(81) @ 805000: uvm_test_top.env.gpio_sb [GPIO_SB] Transaction=4 Expected=0x0000007c Actual=0x0000007c STATUS=PASS
+[GPIO_DRV] Transaction=5 Decimal=125 Hex=0x0000007d
+UVM_INFO vip/gpio_vip/gpio_driver.sv(53) @ 905000: uvm_test_top.env.gpio_agt.drv [GPIO_DRV] Transaction=5 Decimal=125 Hex=0x0000007d
+[GPIO_MON] Transaction=5 Decimal=125 Hex=0x0000007d
+UVM_INFO vip/gpio_vip/gpio_monitor.sv(58) @ 915000: uvm_test_top.env.gpio_agt.mon [GPIO_MON] Transaction=5 Decimal=125 Hex=0x0000007d
+[GPIO_SB] Transaction=5 Expected=0x0000007d Actual=0x0000007d STATUS=PASS
+UVM_INFO scoreboards/gpio_scoreboard.sv(81) @ 915000: uvm_test_top.env.gpio_sb [GPIO_SB] Transaction=5 Expected=0x0000007d Actual=0x0000007d STATUS=PASS
+[GPIO_DRV] Transaction=6 Decimal=126 Hex=0x0000007e
+UVM_INFO vip/gpio_vip/gpio_driver.sv(53) @ 1015000: uvm_test_top.env.gpio_agt.drv [GPIO_DRV] Transaction=6 Decimal=126 Hex=0x0000007e
+[GPIO_MON] Transaction=6 Decimal=126 Hex=0x0000007e
+UVM_INFO vip/gpio_vip/gpio_monitor.sv(58) @ 1025000: uvm_test_top.env.gpio_agt.mon [GPIO_MON] Transaction=6 Decimal=126 Hex=0x0000007e
+[GPIO_SB] Transaction=6 Expected=0x0000007e Actual=0x0000007e STATUS=PASS
+UVM_INFO scoreboards/gpio_scoreboard.sv(81) @ 1025000: uvm_test_top.env.gpio_sb [GPIO_SB] Transaction=6 Expected=0x0000007e Actual=0x0000007e STATUS=PASS
+[GPIO_DRV] Transaction=7 Decimal=127 Hex=0x0000007f
+UVM_INFO vip/gpio_vip/gpio_driver.sv(53) @ 1125000: uvm_test_top.env.gpio_agt.drv [GPIO_DRV] Transaction=7 Decimal=127 Hex=0x0000007f
+[GPIO_MON] Transaction=7 Decimal=127 Hex=0x0000007f
+UVM_INFO vip/gpio_vip/gpio_monitor.sv(58) @ 1135000: uvm_test_top.env.gpio_agt.mon [GPIO_MON] Transaction=7 Decimal=127 Hex=0x0000007f
+[GPIO_SB] Transaction=7 Expected=0x0000007f Actual=0x0000007f STATUS=PASS
+UVM_INFO scoreboards/gpio_scoreboard.sv(81) @ 1135000: uvm_test_top.env.gpio_sb [GPIO_SB] Transaction=7 Expected=0x0000007f Actual=0x0000007f STATUS=PASS
+[GPIO_DRV] Transaction=8 Decimal=128 Hex=0x00000080
+UVM_INFO vip/gpio_vip/gpio_driver.sv(53) @ 1235000: uvm_test_top.env.gpio_agt.drv [GPIO_DRV] Transaction=8 Decimal=128 Hex=0x00000080
+[GPIO_MON] Transaction=8 Decimal=128 Hex=0x00000080
+UVM_INFO vip/gpio_vip/gpio_monitor.sv(58) @ 1245000: uvm_test_top.env.gpio_agt.mon [GPIO_MON] Transaction=8 Decimal=128 Hex=0x00000080
+[GPIO_SB] Transaction=8 Expected=0x00000080 Actual=0x00000080 STATUS=PASS
+UVM_INFO scoreboards/gpio_scoreboard.sv(81) @ 1245000: uvm_test_top.env.gpio_sb [GPIO_SB] Transaction=8 Expected=0x00000080 Actual=0x00000080 STATUS=PASS
+[GPIO_DRV] Transaction=9 Decimal=129 Hex=0x00000081
+UVM_INFO vip/gpio_vip/gpio_driver.sv(53) @ 1345000: uvm_test_top.env.gpio_agt.drv [GPIO_DRV] Transaction=9 Decimal=129 Hex=0x00000081
+[GPIO_MON] Transaction=9 Decimal=129 Hex=0x00000081
+UVM_INFO vip/gpio_vip/gpio_monitor.sv(58) @ 1355000: uvm_test_top.env.gpio_agt.mon [GPIO_MON] Transaction=9 Decimal=129 Hex=0x00000081
+[GPIO_SB] Transaction=9 Expected=0x00000081 Actual=0x00000081 STATUS=PASS
+UVM_INFO scoreboards/gpio_scoreboard.sv(81) @ 1355000: uvm_test_top.env.gpio_sb [GPIO_SB] Transaction=9 Expected=0x00000081 Actual=0x00000081 STATUS=PASS
+[GPIO_DRV] Transaction=10 Decimal=130 Hex=0x00000082
+UVM_INFO vip/gpio_vip/gpio_driver.sv(53) @ 1455000: uvm_test_top.env.gpio_agt.drv [GPIO_DRV] Transaction=10 Decimal=130 Hex=0x00000082
+[GPIO_MON] Transaction=10 Decimal=130 Hex=0x00000082
+UVM_INFO vip/gpio_vip/gpio_monitor.sv(58) @ 1465000: uvm_test_top.env.gpio_agt.mon [GPIO_MON] Transaction=10 Decimal=130 Hex=0x00000082
+[GPIO_SB] Transaction=10 Expected=0x00000082 Actual=0x00000082 STATUS=PASS
+UVM_INFO scoreboards/gpio_scoreboard.sv(81) @ 1465000: uvm_test_top.env.gpio_sb [GPIO_SB] Transaction=10 Expected=0x00000082 Actual=0x00000082 STATUS=PASS
+UVM_INFO soc_uvm_test.sv(115) @ 1695000: uvm_test_top [SOC_TEST]   [2.4] DUT GPIO_DATA_I readback via AXI: 0x00000082 (Decimal 130)
+UVM_INFO soc_uvm_test.sv(127) @ 1755000: uvm_test_top [SOC_TEST] [TEST STEP 3] Beginning UART Verification with UART VIP...
+UVM_INFO soc_uvm_test.sv(130) @ 1755000: uvm_test_top [SOC_TEST]   [3.1] Configuring UART Baud Divisor (347 cycles @ 40MHz = 115200 Baud)...
+UVM_INFO soc_uvm_test.sv(138) @ 2245000: uvm_test_top [SOC_TEST]   [3.1b] UART Initial LSR = 0x60 (RX FIFO soft reset released)
+UVM_INFO soc_uvm_test.sv(141) @ 2245000: uvm_test_top [SOC_TEST]   [3.2] Writing byte 0xA5 to UART THR. Expecting UART VIP Monitor capture...
+UVM_INFO soc_uvm_test.sv(149) @ 40345000: uvm_test_top [SOC_TEST]   [3.3] Writing multiple bytes (0x5A, 0x3C) to UART THR...
+UVM_INFO vip/uart_vip/uart_monitor.sv(98) @ 84792000: uvm_test_top.env.uart_agt.mon [UART_MON] Captured TX byte from DUT: 0xa5 ('.'), framing_err=0
+UVM_INFO scoreboards/uart_scoreboard.sv(70) @ 84792000: uvm_test_top.env.uart_sb [UART_SB] [CHECK PASS] Stop bit framing valid (no framing error)
+UVM_INFO scoreboards/uart_scoreboard.sv(89) @ 84792000: uvm_test_top.env.uart_sb [UART_SB] [CHECK PASS] Transmitted byte matches expected: Actual=0xa5, Expected=0xa5
+UVM_INFO soc_uvm_test.sv(159) @ 116545000: uvm_test_top [SOC_TEST]   [3.4] Driving byte 0x7E from UART VIP Driver into DUT uart_rx...
+UVM_INFO vip/uart_vip/uart_driver.sv(43) @ 116545000: uvm_test_top.env.uart_agt.drv [UART_DRV] Serializing byte 0x7e ('~') onto uart_rx_i (bit period = 347 fixed_clk cycles)...
+UVM_INFO vip/uart_vip/uart_monitor.sv(98) @ 171867000: uvm_test_top.env.uart_agt.mon [UART_MON] Captured TX byte from DUT: 0x5a ('Z'), framing_err=0
+UVM_INFO scoreboards/uart_scoreboard.sv(70) @ 171867000: uvm_test_top.env.uart_sb [UART_SB] [CHECK PASS] Stop bit framing valid (no framing error)
+UVM_INFO scoreboards/uart_scoreboard.sv(89) @ 171867000: uvm_test_top.env.uart_sb [UART_SB] [CHECK PASS] Transmitted byte matches expected: Actual=0x5a, Expected=0x5a
+UVM_INFO soc_uvm_test.sv(177) @ 207995000: uvm_test_top [SOC_TEST] [CHECK PASS] DUT UART successfully received byte 0x7E injected by UART VIP
+UVM_INFO soc_uvm_test.sv(190) @ 207995000: uvm_test_top [SOC_TEST] [TEST STEP 4] Beginning Timer PWM Verification with PWM VIP...
+UVM_INFO soc_uvm_test.sv(193) @ 207995000: uvm_test_top [SOC_TEST]   [4.1] Configuring Timer for 50% Duty Cycle (LOAD=20, CMP=10)...
+UVM_INFO vip/pwm_vip/pwm_monitor.sv(73) @ 208795000: uvm_test_top.env.pwm_agt.mon [PWM_MON] Measured PWM cycle: Period=210.00 ns, High=110.00 ns, Low=100.00 ns, Duty=52.38%, Freq=4761.90 kHz
+UVM_INFO scoreboards/pwm_scoreboard.sv(80) @ 208795000: uvm_test_top.env.pwm_sb [PWM_SB] [CHECK PASS] Duty cycle within tolerance: Measured=52.38%, Expected=50.00% (diff=2.38% <= 5.0%)
+UVM_INFO scoreboards/pwm_scoreboard.sv(95) @ 208795000: uvm_test_top.env.pwm_sb [PWM_SB] [CHECK PASS] Measured valid period: 210.00 ns (~4761.90 kHz)
+UVM_INFO vip/pwm_vip/pwm_monitor.sv(73) @ 209215000: uvm_test_top.env.pwm_agt.mon [PWM_MON] Measured PWM cycle: Period=210.00 ns, High=110.00 ns, Low=100.00 ns, Duty=52.38%, Freq=4761.90 kHz
+UVM_INFO vip/pwm_vip/pwm_monitor.sv(73) @ 209635000: uvm_test_top.env.pwm_agt.mon [PWM_MON] Measured PWM cycle: Period=210.00 ns, High=110.00 ns, Low=100.00 ns, Duty=52.38%, Freq=4761.90 kHz
+UVM_INFO soc_uvm_test.sv(204) @ 209715000: uvm_test_top [SOC_TEST]   [4.2] Configuring Timer for 25% Duty Cycle (LOAD=40, CMP=10)...
+UVM_INFO vip/pwm_vip/pwm_monitor.sv(73) @ 210525000: uvm_test_top.env.pwm_agt.mon [PWM_MON] Measured PWM cycle: Period=410.00 ns, High=110.00 ns, Low=300.00 ns, Duty=26.83%, Freq=2439.02 kHz
+UVM_INFO scoreboards/pwm_scoreboard.sv(80) @ 210525000: uvm_test_top.env.pwm_sb [PWM_SB] [CHECK PASS] Duty cycle within tolerance: Measured=26.83%, Expected=25.00% (diff=1.83% <= 5.0%)
+UVM_INFO scoreboards/pwm_scoreboard.sv(95) @ 210525000: uvm_test_top.env.pwm_sb [PWM_SB] [CHECK PASS] Measured valid period: 410.00 ns (~2439.02 kHz)
+UVM_INFO vip/pwm_vip/pwm_monitor.sv(73) @ 211345000: uvm_test_top.env.pwm_agt.mon [PWM_MON] Measured PWM cycle: Period=410.00 ns, High=110.00 ns, Low=300.00 ns, Duty=26.83%, Freq=2439.02 kHz
+UVM_INFO soc_uvm_test.sv(211) @ 211775000: uvm_test_top [SOC_TEST]   [4.3] Stopping Timer (CTRL=0x00)...
+UVM_INFO soc_uvm_test.sv(218) @ 212005000: uvm_test_top [SOC_TEST] [TEST STEP 5] Executing Coordinated Virtual Sequence...
+UVM_INFO sequences/soc_virtual_sequence.sv(38) @ 212005000: uvm_test_top.env.v_seqr@@vseq [SOC_VSEQ] ==================================================
+UVM_INFO sequences/soc_virtual_sequence.sv(39) @ 212005000: uvm_test_top.env.v_seqr@@vseq [SOC_VSEQ]    STARTING COORDINATED SOC VIRTUAL SEQUENCE     
+UVM_INFO sequences/soc_virtual_sequence.sv(40) @ 212005000: uvm_test_top.env.v_seqr@@vseq [SOC_VSEQ] ==================================================
+UVM_INFO sequences/soc_virtual_sequence.sv(45) @ 212005000: uvm_test_top.env.v_seqr@@vseq [SOC_VSEQ] [PHASE 1] GPIO bus quiescent (10 transactions 121..130 verified in Step 2)...
+UVM_INFO sequences/soc_virtual_sequence.sv(50) @ 212005000: uvm_test_top.env.v_seqr@@vseq [SOC_VSEQ] [PHASE 2] Executing UART Serial Injection Sequences...
+UVM_INFO vip/uart_vip/uart_driver.sv(43) @ 212005000: uvm_test_top.env.uart_agt.drv [UART_DRV] Serializing byte 0xa5 ('.') onto uart_rx_i (bit period = 347 fixed_clk cycles)...
+UVM_INFO vip/uart_vip/uart_monitor.sv(98) @ 258942000: uvm_test_top.env.uart_agt.mon [UART_MON] Captured TX byte from DUT: 0x3c ('<'), framing_err=0
+UVM_INFO scoreboards/uart_scoreboard.sv(70) @ 258942000: uvm_test_top.env.uart_sb [UART_SB] [CHECK PASS] Stop bit framing valid (no framing error)
+UVM_INFO scoreboards/uart_scoreboard.sv(89) @ 258942000: uvm_test_top.env.uart_sb [UART_SB] [CHECK PASS] Transmitted byte matches expected: Actual=0x3c, Expected=0x3c
+UVM_INFO vip/uart_vip/uart_driver.sv(43) @ 303091000: uvm_test_top.env.uart_agt.drv [UART_DRV] Serializing byte 0x5a ('Z') onto uart_rx_i (bit period = 347 fixed_clk cycles)...
+UVM_INFO vip/uart_vip/uart_driver.sv(43) @ 394166000: uvm_test_top.env.uart_agt.drv [UART_DRV] Serializing byte 0x3c ('<') onto uart_rx_i (bit period = 347 fixed_clk cycles)...
+UVM_INFO vip/uart_vip/uart_driver.sv(43) @ 485241000: uvm_test_top.env.uart_agt.drv [UART_DRV] Serializing byte 0xc3 ('.') onto uart_rx_i (bit period = 347 fixed_clk cycles)...
+UVM_INFO vip/uart_vip/uart_driver.sv(43) @ 576316000: uvm_test_top.env.uart_agt.drv [UART_DRV] Serializing byte 0xa5 ('.') onto uart_rx_i (bit period = 347 fixed_clk cycles)...
+UVM_INFO sequences/soc_virtual_sequence.sv(62) @ 667391000: uvm_test_top.env.v_seqr@@vseq [SOC_VSEQ] [PHASE 3] Coordinating PWM Passive Verification...
+UVM_INFO sequences/pwm_sequence.sv(25) @ 667391000: uvm_test_top.env.pwm_agt.seqr@@seq_pwm [PWM_SEQ] PWM VIP is passive monitor-only; awaiting timer PWM output pulses.
+UVM_INFO sequences/soc_virtual_sequence.sv(66) @ 667391000: uvm_test_top.env.v_seqr@@vseq [SOC_VSEQ] ==================================================
+UVM_INFO sequences/soc_virtual_sequence.sv(67) @ 667391000: uvm_test_top.env.v_seqr@@vseq [SOC_VSEQ]    COMPLETED COORDINATED SOC VIRTUAL SEQUENCE    
+UVM_INFO sequences/soc_virtual_sequence.sv(68) @ 667391000: uvm_test_top.env.v_seqr@@vseq [SOC_VSEQ] ==================================================
+UVM_INFO soc_uvm_test.sv(223) @ 667885000: uvm_test_top [SOC_TEST] ==================================================
+UVM_INFO soc_uvm_test.sv(224) @ 667885000: uvm_test_top [SOC_TEST]   ALL SoC UVM VIP TEST PROCEDURES COMPLETED       
+UVM_INFO soc_uvm_test.sv(225) @ 667885000: uvm_test_top [SOC_TEST] ==================================================
+UVM_INFO /home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 667885000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+========== GPIO VERIFICATION SUMMARY ==========
+Total Transactions : 10
+Passed Transactions: 10
+Failed Transactions: 0
+Final Status       : PASS
+================================================
+UVM_INFO scoreboards/gpio_scoreboard.sv(106) @ 667885000: uvm_test_top.env.gpio_sb [GPIO_SB] ========== GPIO VERIFICATION SUMMARY ==========
+UVM_INFO scoreboards/gpio_scoreboard.sv(107) @ 667885000: uvm_test_top.env.gpio_sb [GPIO_SB] Total Transactions : 10
+UVM_INFO scoreboards/gpio_scoreboard.sv(108) @ 667885000: uvm_test_top.env.gpio_sb [GPIO_SB] Passed Transactions: 10
+UVM_INFO scoreboards/gpio_scoreboard.sv(109) @ 667885000: uvm_test_top.env.gpio_sb [GPIO_SB] Failed Transactions: 0
+UVM_INFO scoreboards/gpio_scoreboard.sv(110) @ 667885000: uvm_test_top.env.gpio_sb [GPIO_SB] Final Status       : PASS
+UVM_INFO scoreboards/gpio_scoreboard.sv(111) @ 667885000: uvm_test_top.env.gpio_sb [GPIO_SB] ================================================
+UVM_INFO scoreboards/pwm_scoreboard.sv(106) @ 667885000: uvm_test_top.env.pwm_sb [PWM_SB] --------------------------------------------------------
+UVM_INFO scoreboards/pwm_scoreboard.sv(107) @ 667885000: uvm_test_top.env.pwm_sb [PWM_SB]                PWM SCOREBOARD REPORT                    
+UVM_INFO scoreboards/pwm_scoreboard.sv(108) @ 667885000: uvm_test_top.env.pwm_sb [PWM_SB]   Total Verification Checks : 4
+UVM_INFO scoreboards/pwm_scoreboard.sv(109) @ 667885000: uvm_test_top.env.pwm_sb [PWM_SB]   Passed Checks             : 4
+UVM_INFO scoreboards/pwm_scoreboard.sv(110) @ 667885000: uvm_test_top.env.pwm_sb [PWM_SB]   Failed Checks             : 0
+UVM_INFO scoreboards/pwm_scoreboard.sv(112) @ 667885000: uvm_test_top.env.pwm_sb [PWM_SB]   >>> STATUS: PWM VERIFICATION PASSED 100% <<<
+UVM_INFO scoreboards/pwm_scoreboard.sv(118) @ 667885000: uvm_test_top.env.pwm_sb [PWM_SB] --------------------------------------------------------
+UVM_INFO scoreboards/uart_scoreboard.sv(101) @ 667885000: uvm_test_top.env.uart_sb [UART_SB] --------------------------------------------------------
+UVM_INFO scoreboards/uart_scoreboard.sv(102) @ 667885000: uvm_test_top.env.uart_sb [UART_SB]                UART SCOREBOARD REPORT                   
+UVM_INFO scoreboards/uart_scoreboard.sv(103) @ 667885000: uvm_test_top.env.uart_sb [UART_SB]   Total Verification Checks : 7
+UVM_INFO scoreboards/uart_scoreboard.sv(104) @ 667885000: uvm_test_top.env.uart_sb [UART_SB]   Passed Checks             : 7
+UVM_INFO scoreboards/uart_scoreboard.sv(105) @ 667885000: uvm_test_top.env.uart_sb [UART_SB]   Failed Checks             : 0
+UVM_INFO scoreboards/uart_scoreboard.sv(107) @ 667885000: uvm_test_top.env.uart_sb [UART_SB]   >>> STATUS: UART VERIFICATION PASSED 100% <<<
+UVM_INFO scoreboards/uart_scoreboard.sv(113) @ 667885000: uvm_test_top.env.uart_sb [UART_SB] --------------------------------------------------------
+UVM_INFO soc_uvm_test.sv(238) @ 667885000: uvm_test_top [SOC_TEST] ================================================================================
+UVM_INFO soc_uvm_test.sv(239) @ 667885000: uvm_test_top [SOC_TEST]                  FINAL SoC UVM VIP INTEGRATION SUMMARY                          
+UVM_INFO soc_uvm_test.sv(240) @ 667885000: uvm_test_top [SOC_TEST] ================================================================================
+UVM_INFO soc_uvm_test.sv(241) @ 667885000: uvm_test_top [SOC_TEST]   GPIO VIP Checks : Total=10, Pass=10, Fail=0
+UVM_INFO soc_uvm_test.sv(243) @ 667885000: uvm_test_top [SOC_TEST]   UART VIP Checks : Total=7, Pass=7, Fail=0
+UVM_INFO soc_uvm_test.sv(245) @ 667885000: uvm_test_top [SOC_TEST]   PWM VIP Checks  : Total=4, Pass=4, Fail=0
+UVM_INFO soc_uvm_test.sv(247) @ 667885000: uvm_test_top [SOC_TEST] --------------------------------------------------------------------------------
+UVM_INFO soc_uvm_test.sv(248) @ 667885000: uvm_test_top [SOC_TEST]   TOTAL COMBINED CHECKS : 21
+UVM_INFO soc_uvm_test.sv(249) @ 667885000: uvm_test_top [SOC_TEST]   PASSED CHECKS         : 21
+UVM_INFO soc_uvm_test.sv(250) @ 667885000: uvm_test_top [SOC_TEST]   FAILED CHECKS         : 0
+UVM_INFO soc_uvm_test.sv(251) @ 667885000: uvm_test_top [SOC_TEST] --------------------------------------------------------------------------------
+UVM_INFO soc_uvm_test.sv(253) @ 667885000: uvm_test_top [SOC_TEST]   >>> FINAL STATUS: ALL UVM VIP INTEGRATION CHECKS PASSED (100%) <<<
+UVM_INFO soc_uvm_test.sv(257) @ 667885000: uvm_test_top [SOC_TEST] ================================================================================
+UVM_INFO /home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_report_server.svh(904) @ 667885000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  132
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[GPIO_DRV]    11
+[GPIO_MON]    11
+[GPIO_SB]    16
+[PWM_DRV]     1
+[PWM_MON]     6
+[PWM_SB]    11
+[PWM_SEQ]     1
+[RNTST]     1
+[SOC_ENV]     2
+[SOC_TEST]    37
+[SOC_VSEQ]     9
+[TEST_DONE]     1
+[UART_DRV]     7
+[UART_MON]     4
+[UART_SB]    13
+[UVM/RELNOTES]     1
+
+$finish called from file "/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time            667885000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 667885000 ps
+CPU Time:      7.680 seconds;       Data structure size:   2.5Mb
+Sat Nov  7 16:28:47 2026

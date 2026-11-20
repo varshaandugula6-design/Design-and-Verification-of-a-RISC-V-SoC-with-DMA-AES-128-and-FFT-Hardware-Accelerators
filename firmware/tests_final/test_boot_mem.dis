@@ -1,0 +1,62 @@
+
+/home/student/Documents/honours_121/CBP/firmware/tests_final/test_boot_mem.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00040000 <_start>:
+   40000:	00088137          	lui	sp,0x88
+   40004:	00000097          	auipc	ra,0x0
+   40008:	00c080e7          	jalr	12(ra) # 40010 <main>
+
+0004000c <_loop>:
+   4000c:	0000006f          	j	4000c <_loop>
+
+00040010 <main>:
+   40010:	2a23e7b7          	lui	a5,0x2a23e
+   40014:	00080737          	lui	a4,0x80
+   40018:	b1878793          	addi	a5,a5,-1256 # 2a23db18 <main+0x2a1fdb08>
+   4001c:	a5a568b7          	lui	a7,0xa5a56
+   40020:	00f72023          	sw	a5,0(a4) # 80000 <main+0x3fff0>
+   40024:	a5a88893          	addi	a7,a7,-1446 # a5a55a5a <main+0xa5a15a4a>
+   40028:	11172023          	sw	a7,256(a4)
+   4002c:	00070613          	mv	a2,a4
+   40030:	00070693          	mv	a3,a4
+   40034:	b4b45737          	lui	a4,0xb4b45
+   40038:	b4b70713          	addi	a4,a4,-1205 # b4b44b4b <main+0xb4b04b3b>
+   4003c:	878785b7          	lui	a1,0x87878
+   40040:	10e62223          	sw	a4,260(a2)
+   40044:	10860793          	addi	a5,a2,264
+   40048:	00080837          	lui	a6,0x80
+   4004c:	87858593          	addi	a1,a1,-1928 # 87877878 <main+0x87837868>
+   40050:	96967537          	lui	a0,0x96967
+   40054:	00b7a023          	sw	a1,0(a5)
+   40058:	10c80813          	addi	a6,a6,268 # 8010c <main+0x400fc>
+   4005c:	96950513          	addi	a0,a0,-1687 # 96966969 <main+0x96926959>
+   40060:	00a82023          	sw	a0,0(a6)
+   40064:	10062603          	lw	a2,256(a2)
+   40068:	1046a683          	lw	a3,260(a3)
+   4006c:	0007a783          	lw	a5,0(a5)
+   40070:	02e68463          	beq	a3,a4,40098 <main+0x88>
+   40074:	000807b7          	lui	a5,0x80
+   40078:	10c78793          	addi	a5,a5,268 # 8010c <main+0x400fc>
+   4007c:	0007a783          	lw	a5,0(a5)
+   40080:	deadc737          	lui	a4,0xdeadc
+   40084:	000807b7          	lui	a5,0x80
+   40088:	eef70713          	addi	a4,a4,-273 # deadbeef <main+0xdea9bedf>
+   4008c:	00e7a423          	sw	a4,8(a5) # 80008 <main+0x3fff8>
+   40090:	00100513          	li	a0,1
+   40094:	00008067          	ret
+   40098:	fcb79ee3          	bne	a5,a1,40074 <main+0x64>
+   4009c:	00082783          	lw	a5,0(a6)
+   400a0:	fea790e3          	bne	a5,a0,40080 <main+0x70>
+   400a4:	fd161ee3          	bne	a2,a7,40080 <main+0x70>
+   400a8:	5a5aa637          	lui	a2,0x5a5aa
+   400ac:	000806b7          	lui	a3,0x80
+   400b0:	5a560613          	addi	a2,a2,1445 # 5a5aa5a5 <main+0x5a56a595>
+   400b4:	c001d737          	lui	a4,0xc001d
+   400b8:	00c6a223          	sw	a2,4(a3) # 80004 <main+0x3fff4>
+   400bc:	afe70713          	addi	a4,a4,-1282 # c001cafe <main+0xbffdcaee>
+   400c0:	00e6a423          	sw	a4,8(a3)
+   400c4:	00000513          	li	a0,0
+   400c8:	00008067          	ret

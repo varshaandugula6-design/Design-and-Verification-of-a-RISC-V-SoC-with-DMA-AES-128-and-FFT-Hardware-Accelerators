@@ -1,0 +1,86 @@
+
+/home/student/Documents/honours_121/CBP/firmware/tests_final/test_dma_c.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00040000 <_start>:
+   40000:	00088137          	lui	sp,0x88
+   40004:	00000097          	auipc	ra,0x0
+   40008:	00c080e7          	jalr	12(ra) # 40010 <main>
+
+0004000c <_loop>:
+   4000c:	0000006f          	j	4000c <_loop>
+
+00040010 <main>:
+   40010:	a5a507b7          	lui	a5,0xa5a50
+   40014:	00080737          	lui	a4,0x80
+   40018:	00178793          	addi	a5,a5,1 # a5a50001 <main+0xa5a0fff1>
+   4001c:	a5a50637          	lui	a2,0xa5a50
+   40020:	20f72023          	sw	a5,512(a4) # 80200 <main+0x401f0>
+   40024:	000806b7          	lui	a3,0x80
+   40028:	00260613          	addi	a2,a2,2 # a5a50002 <main+0xa5a0fff2>
+   4002c:	a5a505b7          	lui	a1,0xa5a50
+   40030:	20c6a223          	sw	a2,516(a3) # 80204 <main+0x401f4>
+   40034:	00358593          	addi	a1,a1,3 # a5a50003 <main+0xa5a0fff3>
+   40038:	a5a50637          	lui	a2,0xa5a50
+   4003c:	20b6a423          	sw	a1,520(a3)
+   40040:	00460613          	addi	a2,a2,4 # a5a50004 <main+0xa5a0fff4>
+   40044:	20c6a623          	sw	a2,524(a3)
+   40048:	800097b7          	lui	a5,0x80009
+   4004c:	2007a023          	sw	zero,512(a5) # 80009200 <main+0x7ffc91f0>
+   40050:	00078693          	mv	a3,a5
+   40054:	2006a223          	sw	zero,516(a3)
+   40058:	2006a423          	sw	zero,520(a3)
+   4005c:	2006a623          	sw	zero,524(a3)
+   40060:	80006637          	lui	a2,0x80006
+   40064:	20070713          	addi	a4,a4,512
+   40068:	02e62023          	sw	a4,32(a2) # 80006020 <main+0x7ffc6010>
+   4006c:	20078793          	addi	a5,a5,512
+   40070:	02f62823          	sw	a5,48(a2)
+   40074:	01000693          	li	a3,16
+   40078:	04d62023          	sw	a3,64(a2)
+   4007c:	00400713          	li	a4,4
+   40080:	04e62823          	sw	a4,80(a2)
+   40084:	800067b7          	lui	a5,0x80006
+   40088:	01100693          	li	a3,17
+   4008c:	00d7a023          	sw	a3,0(a5) # 80006000 <main+0x7ffc5ff0>
+   40090:	00878713          	addi	a4,a5,8
+   40094:	00072783          	lw	a5,0(a4)
+   40098:	00f79693          	slli	a3,a5,0xf
+   4009c:	fe06dce3          	bgez	a3,40094 <main+0x84>
+   400a0:	80009737          	lui	a4,0x80009
+   400a4:	80077837          	lui	a6,0x80077
+   400a8:	80009537          	lui	a0,0x80009
+   400ac:	20070713          	addi	a4,a4,512 # 80009200 <main+0x7ffc91f0>
+   400b0:	e0080813          	addi	a6,a6,-512 # 80076e00 <main+0x80036df0>
+   400b4:	21050513          	addi	a0,a0,528 # 80009210 <main+0x7ffc9200>
+   400b8:	00000693          	li	a3,0
+   400bc:	800778b7          	lui	a7,0x80077
+   400c0:	00072783          	lw	a5,0(a4)
+   400c4:	010705b3          	add	a1,a4,a6
+   400c8:	01170633          	add	a2,a4,a7
+   400cc:	00f5a023          	sw	a5,0(a1)
+   400d0:	00062603          	lw	a2,0(a2)
+   400d4:	00470713          	addi	a4,a4,4
+   400d8:	40c787b3          	sub	a5,a5,a2
+   400dc:	00f037b3          	snez	a5,a5
+   400e0:	00f686b3          	add	a3,a3,a5
+   400e4:	fca71ee3          	bne	a4,a0,400c0 <main+0xb0>
+   400e8:	02069463          	bnez	a3,40110 <main+0x100>
+   400ec:	d11a0637          	lui	a2,0xd11a0
+   400f0:	000806b7          	lui	a3,0x80
+   400f4:	00160613          	addi	a2,a2,1 # d11a0001 <main+0xd115fff1>
+   400f8:	c001d737          	lui	a4,0xc001d
+   400fc:	00c6a823          	sw	a2,16(a3) # 80010 <main+0x40000>
+   40100:	afe70713          	addi	a4,a4,-1282 # c001cafe <main+0xbffdcaee>
+   40104:	00e6ac23          	sw	a4,24(a3)
+   40108:	00000513          	li	a0,0
+   4010c:	00008067          	ret
+   40110:	deadc7b7          	lui	a5,0xdeadc
+   40114:	000806b7          	lui	a3,0x80
+   40118:	eef78793          	addi	a5,a5,-273 # deadbeef <main+0xdea9bedf>
+   4011c:	00f6a823          	sw	a5,16(a3) # 80010 <main+0x40000>
+   40120:	00f6ac23          	sw	a5,24(a3)
+   40124:	00100513          	li	a0,1
+   40128:	00008067          	ret

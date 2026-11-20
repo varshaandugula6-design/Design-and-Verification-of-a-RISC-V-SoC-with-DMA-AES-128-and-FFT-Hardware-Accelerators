@@ -1,0 +1,1131 @@
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'Rocky Linux release 8.10 (Green Obsidian)' is not supported 
+  on 'x86_64' officially, assuming linux compatibility by default. Set 
+  VCS_ARCH_OVERRIDE to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+Command: vcs -full64 -sverilog -ntb_opts uvm-1.2 -timescale=1ns/1ps -kdb -debug_access+all \
+-f soc_uvm_compile.f -top tb_soc_uvm_top +define+DUMP_FSDB -P /home/student/snps_tools_target/verdi/U-2023.03-SP1/share/PLI/VCS/linux64/novas.tab \
+/home/student/snps_tools_target/verdi/U-2023.03-SP1/share/PLI/VCS/linux64/pli.a -o \
+simv_uvm_fsdb -l gpio_data_121_to_130_compile.log
+                         Chronologic VCS (TM)
+         Version U-2023.03_Full64 -- Sat Nov  7 16:27:59 2026
+
+                    Copyright (c) 1991 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_pkg.sv'
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/macros/uvm_version_defines.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/macros/uvm_global_defines.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/macros/snps_macros.svp'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/macros/uvm_message_defines.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/macros/uvm_phase_defines.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/macros/uvm_object_defines.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/macros/uvm_printer_defines.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/macros/uvm_tlm_defines.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_tlm_imps.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/macros/uvm_tlm_defines.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/macros/uvm_sequence_defines.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/macros/uvm_callback_defines.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/macros/uvm_reg_defines.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/macros/uvm_deprecated_defines.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/dpi/uvm_dpi.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/dpi/uvm_hdl.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/dpi/uvm_dpi.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/dpi/uvm_svcmd_dpi.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/dpi/uvm_dpi.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/dpi/uvm_regex.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/dpi/uvm_dpi.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_coreservice.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_version.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_object_globals.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_misc.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_object.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_pool.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_queue.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_factory.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_registry.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_spell_chkr.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_resource.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_resource_specializations.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_resource_db.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_config_db.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_printer.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_comparer.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_packer.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_links.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_tr_database.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_tr_stream.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_recorder.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_event_callback.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_event.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_barrier.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_callback.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_callback.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_report_message.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_report_catcher.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_report_server.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_report_handler.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_report_object.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_transaction.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_phase.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_domain.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_bottomup_phase.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_topdown_phase.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_task_phase.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_common_phases.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_runtime_phases.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_component.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_root.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_component.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_objection.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_heartbeat.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_globals.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_cmdline_processor.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_traversal.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_base.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/dap/uvm_dap.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/dap/uvm_set_get_dap_base.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/dap/uvm_dap.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/dap/uvm_simple_lock_dap.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/dap/uvm_dap.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/dap/uvm_get_to_lock_dap.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/dap/uvm_dap.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/dap/uvm_set_before_get_dap.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/dap/uvm_dap.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_tlm_ifs.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_sqr_ifs.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/base/uvm_port_base.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_tlm_imps.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_imps.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_ports.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_exports.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_analysis_port.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_tlm_fifo_base.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_tlm_fifos.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_tlm_req_rsp.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_sqr_connections.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm1/uvm_tlm.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_pair.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_policies.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_in_order_comparator.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_algorithmic_comparator.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_random_stimulus.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_subscriber.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_monitor.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_driver.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_push_driver.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_scoreboard.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_agent.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_env.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_comps.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_test.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/comps/uvm_comps.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/seq/uvm_sequence_item.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/seq/uvm_sequencer_base.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/seq/uvm_sequencer_analysis_fifo.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/seq/uvm_sequencer_param_base.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/seq/uvm_sequencer.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/seq/uvm_push_sequencer.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/seq/uvm_sequence_base.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/seq/uvm_sequence.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/seq/uvm_sequence_library.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/seq/uvm_seq.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/seq/uvm_sequence_builtin.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/seq/uvm_seq.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm2/uvm_tlm2_defines.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm2/uvm_tlm2_time.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm2/uvm_tlm2_generic_payload.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm2/uvm_tlm2_ifs.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm2/uvm_tlm2_imps.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm2/uvm_tlm2_ports.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm2/uvm_tlm2_exports.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm2/uvm_tlm2_sockets_base.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm2/uvm_tlm2_sockets.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/tlm2/uvm_tlm2.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_item.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_adapter.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_predictor.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_sequence.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_cbs.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_backdoor.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_field.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_vreg_field.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_indirect.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_fifo.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_file.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_mem_mam.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_vreg.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_mem.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_map.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_block.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/sequences/uvm_reg_hw_reset_seq.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/sequences/uvm_reg_bit_bash_seq.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/sequences/uvm_mem_walk_seq.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/sequences/uvm_mem_access_seq.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/sequences/uvm_reg_access_seq.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/sequences/uvm_reg_mem_shared_access_seq.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/sequences/uvm_reg_mem_built_in_seq.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/snps_uvm_reg_bank.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/reg/uvm_reg_model.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/vcs/vcs_uvm_alt.sv'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_pkg.sv'.
+Parsing design file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/vcs/uvm_custom_install_vcs_recorder.sv'
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/vcs/msglog.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/vcs/uvm_msglog_report_server.sv'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/vcs/uvm_vcs_recorder.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/vcs/uvm_vcs_tr_database.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/vcs/uvm_vcs_tr_stream.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/vcs/uvm_vcs_tr_database.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/vcs/uvm_vcs_recorder.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/vcs/uvm_vcs_record_interface.sv'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing design file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_verdi_recorder.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_verdi_pli_base.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_verdi_recorder.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_verdi_tr_database.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_verdi_tr_stream.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_verdi_tr_database.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_verdi_recorder.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_verdi_reg_map_recording.sv'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_verdi_message_catcher.svh'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_verdi_pli_base.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_verdi_message_catcher.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_verdi_factory.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/./dpi/uvm_verdi_dpi.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_verdi_reg_recording.sv'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/student/snps_tools_target/verdi/U-2023.03-SP1/share/PLI/VCS/include/verdi_trans_recorder_dpi.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_verdi_pli.svh'.
+Back to file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing design file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/uvm_custom_install_verdi_recorder.sv'
+Parsing design file '../../rtl/interconnect/priority_encoder.v'
+Parsing design file '../../rtl/interconnect/arbiter.v'
+Parsing design file '../../rtl/interconnect/axi_interconnect.v'
+Parsing design file '../../rtl/interconnect/axi_interconnect_wrap_3x15.v'
+Parsing design file '../../rtl/UART/axi_internal_fifo.v'
+Parsing design file '../../rtl/UART/uart_parity_bit_compute.v'
+Parsing design file '../../rtl/UART/uart_transmitter.v'
+Parsing design file '../../rtl/UART/uart_receiver.v'
+Parsing design file '../../rtl/UART/uart_controller.v'
+Parsing design file '../../rtl/UART/axi_uart_top.v'
+Parsing included file '../../rtl/UART/include/axi_uart_defines.vh'.
+Back to file '../../rtl/UART/axi_uart_top.v'.
+Parsing included file '../../rtl/UART/include/axi_uart.vh'.
+Back to file '../../rtl/UART/axi_uart_top.v'.
+Parsing design file '../../rtl/verilog_aes/timescale.v'
+Parsing design file '../../rtl/verilog_aes/aes_rcon.v'
+Parsing included file '../../rtl/verilog_aes/timescale.v'.
+Back to file '../../rtl/verilog_aes/aes_rcon.v'.
+Parsing design file '../../rtl/verilog_aes/aes_sbox.v'
+Parsing included file '../../rtl/verilog_aes/timescale.v'.
+Back to file '../../rtl/verilog_aes/aes_sbox.v'.
+Parsing design file '../../rtl/verilog_aes/aes_inv_sbox.v'
+Parsing included file '../../rtl/verilog_aes/timescale.v'.
+Back to file '../../rtl/verilog_aes/aes_inv_sbox.v'.
+Parsing design file '../../rtl/verilog_aes/aes_key_expand_128.v'
+Parsing included file '../../rtl/verilog_aes/timescale.v'.
+Back to file '../../rtl/verilog_aes/aes_key_expand_128.v'.
+Parsing design file '../../rtl/verilog_aes/aes_cipher_top.v'
+Parsing included file '../../rtl/verilog_aes/timescale.v'.
+Back to file '../../rtl/verilog_aes/aes_cipher_top.v'.
+Parsing design file '../../rtl/verilog_aes/aes_inv_cipher_top.v'
+Parsing included file '../../rtl/verilog_aes/timescale.v'.
+Back to file '../../rtl/verilog_aes/aes_inv_cipher_top.v'.
+Parsing design file '../../rtl/aes_axi_slave/aes_axi_slave.sv'
+Parsing design file '../../rtl/aes_axi_slave/aes_axi_slave_axi4.sv'
+Parsing design file '../../rtl/fft_nexhus/xpm_memory_tdpram_model.sv'
+Parsing design file '../../rtl/fft_nexhus/bram_memeory.sv'
+Parsing design file '../../rtl/fft_nexhus/twiddle_rom.sv'
+Parsing design file '../../rtl/fft_nexhus/add_sub_sat_s1_q15.sv'
+Parsing design file '../../rtl/fft_nexhus/cmulq15.sv'
+Parsing design file '../../rtl/fft_nexhus/fft_atomic_p1.sv'
+Parsing design file '../../rtl/fft_nexhus/fft_stage_core.sv'
+Parsing design file '../../rtl/fft_nexhus/fft_stage_core_controller.sv'
+Parsing design file '../../rtl/fft_nexhus/fft_top.sv'
+Parsing design file '../../rtl/fft_nexhus/fft_loadstore_wrapper.sv'
+Parsing design file '../../rtl/fft_nexhus/fft_ctrl_axil.sv'
+Parsing design file '../../rtl/fft_nexhus/fft_mem_axi4_slave.sv'
+Parsing design file '../../rtl/fft_nexhus/fft_accel_fft_top.sv'
+Parsing design file '../../rtl/fft_nexhus/fft_ctrl_axi4_bridge.sv'
+Parsing design file '../../rtl/fft_nexhus/fft_mem_axi4_wrap.sv'
+Parsing design file '../../rtl/DMA/amba_axi_pkg.sv'
+Parsing design file '../../rtl/DMA/dma_utils_pkg.sv'
+Parsing included file '../../rtl/DMA/dma_pkg.svh'.
+Back to file '../../rtl/DMA/dma_utils_pkg.sv'.
+Parsing design file '../../rtl/DMA/rggen_or_reducer.v'
+Parsing design file '../../rtl/DMA/rggen_mux.v'
+Parsing design file '../../rtl/DMA/rggen_bit_field.v'
+Parsing included file '../../rtl/DMA/rggen_rtl_macros.vh'.
+Back to file '../../rtl/DMA/rggen_bit_field.v'.
+Parsing design file '../../rtl/DMA/rggen_bit_field_w01trg.v'
+Parsing design file '../../rtl/DMA/rggen_default_register.v'
+Parsing design file '../../rtl/DMA/rggen_indirect_register.v'
+Parsing design file '../../rtl/DMA/rggen_external_register.v'
+Parsing design file '../../rtl/DMA/rggen_register_common.v'
+Parsing design file '../../rtl/DMA/rggen_address_decoder.v'
+Parsing design file '../../rtl/DMA/rggen_adapter_common.v'
+Parsing design file '../../rtl/DMA/rggen_axi4lite_skid_buffer.v'
+Parsing design file '../../rtl/DMA/rggen_axi4lite_bridge.v'
+Parsing design file '../../rtl/DMA/rggen_axi4lite_adapter.v'
+Parsing design file '../../rtl/DMA/csr_dma.v'
+Parsing design file '../../rtl/DMA/dma_fifo.sv'
+Parsing design file '../../rtl/DMA/dma_fsm.sv'
+Parsing design file '../../rtl/DMA/dma_streamer.sv'
+Parsing design file '../../rtl/DMA/dma_axi_if.sv'
+Parsing design file '../../rtl/DMA/dma_func_wrapper.sv'
+Parsing design file '../../rtl/DMA/dma_axi_wrapper.sv'
+Parsing design file '../../rtl/Cores-VeeR-EL2/snapshots/default/common_defines.vh'
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/lib/el2_assert.sv'
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/el2_mubi_pkg.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/common_defines.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/el2_mubi_pkg.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/include/el2_def.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_pdef.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/include/el2_def.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/el2_lockstep_pkg.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/el2_lockstep_pkg.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/lib/el2_mem_if.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/lib/el2_mem_if.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/lib/beh_lib.sv'
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/lib/mem_lib.sv'
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/lib/el2_lib.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/lib/el2_lib.sv'.
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/lib/el2_lib.sv'.
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/lib/el2_lib.sv'.
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/lib/el2_lib.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/el2_pmp.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/el2_pmp.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/el2_pic_ctrl.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/el2_pic_ctrl.sv'.
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/pic_map_auto.svh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/el2_pic_ctrl.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/el2_dma_ctrl.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/el2_dma_ctrl.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_aln_ctl.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_aln_ctl.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_compress_ctl.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_compress_ctl.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_ifc_ctl.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_ifc_ctl.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_bp_ctl.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_bp_ctl.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_ic_mem.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_ic_mem.sv'.
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_ic_mem.sv'.
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_ic_mem.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_mem_ctl.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_mem_ctl.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_iccm_mem.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_iccm_mem.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/dec/el2_dec_decode_ctl.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/dec/el2_dec_decode_ctl.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/dec/el2_dec_gpr_ctl.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/dec/el2_dec_gpr_ctl.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/dec/el2_dec_ib_ctl.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/dec/el2_dec_ib_ctl.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/dec/el2_dec_pmp_ctl.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/dec/el2_dec_pmp_ctl.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/dec/el2_dec_tlu_ctl.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/dec/el2_dec_tlu_ctl.sv'.
+Parsing included file '../../rtl/Cores-VeeR-EL2/design/include/el2_dec_csr_equ_m.svh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/dec/el2_dec_tlu_ctl.sv'.
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/dec/el2_dec_tlu_ctl.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/dec/el2_dec_trigger.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/dec/el2_dec_trigger.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/dec/el2_dec.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/dec/el2_dec.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/exu/el2_exu_alu_ctl.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/exu/el2_exu_alu_ctl.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/exu/el2_exu_mul_ctl.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/exu/el2_exu_mul_ctl.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/exu/el2_exu_div_ctl.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/exu/el2_exu_div_ctl.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/exu/el2_exu.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/exu/el2_exu.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_clkdomain.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_clkdomain.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_addrcheck.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_addrcheck.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_lsc_ctl.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_lsc_ctl.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_stbuf.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_stbuf.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_bus_buffer.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_bus_buffer.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_bus_intf.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_bus_intf.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_ecc.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_ecc.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_dccm_mem.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_dccm_mem.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_dccm_ctl.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_dccm_ctl.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_trigger.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_trigger.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/dbg/el2_dbg.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/dbg/el2_dbg.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/dmi/dmi_mux.v'
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/dmi/dmi_wrapper.v'
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/dmi/dmi_jtag_to_core_sync.v'
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/dmi/rvjtag_tap.v'
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/lib/ahb_to_axi4.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/lib/ahb_to_axi4.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/lib/axi4_to_ahb.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/lib/axi4_to_ahb.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/el2_veer.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/el2_veer.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/el2_mem.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/el2_mem.sv'.
+Parsing design file '../../rtl/Cores-VeeR-EL2/design/el2_veer_wrapper.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/common_defines.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/el2_veer_wrapper.sv'.
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/Cores-VeeR-EL2/design/el2_veer_wrapper.sv'.
+Parsing design file '../../rtl/common/axi64_to_axi32_adapter.sv'
+Parsing design file '../../rtl/veer_wrapper_axi32.sv'
+Parsing included file '../../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../../rtl/veer_wrapper_axi32.sv'.
+Parsing design file '../../rtl/common/axi4lite_slave_adapter.sv'
+Parsing design file '../../rtl/common/axi4_to_axi4lite_bridge.sv'
+Parsing design file '../../rtl/gpio/gpio_bit.sv'
+Parsing design file '../../rtl/gpio/gpio_wrapper.sv'
+Parsing design file '../../rtl/gpio/gpio_regs.sv'
+Parsing design file '../../rtl/gpio/gpio_axi.sv'
+Parsing design file '../../rtl/timer/timer_core.sv'
+Parsing design file '../../rtl/timer/timer_regs.sv'
+Parsing design file '../../rtl/timer/timer_axi.sv'
+Parsing design file '../../rtl/main_top.v'
+Parsing design file 'vip/gpio_vip/gpio_if.sv'
+Parsing design file 'vip/uart_vip/uart_if.sv'
+Parsing design file 'vip/pwm_vip/pwm_if.sv'
+Parsing design file 'vip/gpio_vip/gpio_pkg.sv'
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Back to file 'vip/gpio_vip/gpio_pkg.sv'.
+Parsing included file 'vip/gpio_vip/gpio_item.sv'.
+Back to file 'vip/gpio_vip/gpio_pkg.sv'.
+Parsing included file 'vip/gpio_vip/gpio_sequencer.sv'.
+Back to file 'vip/gpio_vip/gpio_pkg.sv'.
+Parsing included file 'vip/gpio_vip/gpio_driver.sv'.
+Back to file 'vip/gpio_vip/gpio_pkg.sv'.
+Parsing included file 'vip/gpio_vip/gpio_monitor.sv'.
+Back to file 'vip/gpio_vip/gpio_pkg.sv'.
+Parsing included file 'vip/gpio_vip/gpio_agent.sv'.
+Back to file 'vip/gpio_vip/gpio_pkg.sv'.
+Parsing design file 'vip/uart_vip/uart_pkg.sv'
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Back to file 'vip/uart_vip/uart_pkg.sv'.
+Parsing included file 'vip/uart_vip/uart_item.sv'.
+Back to file 'vip/uart_vip/uart_pkg.sv'.
+Parsing included file 'vip/uart_vip/uart_sequencer.sv'.
+Back to file 'vip/uart_vip/uart_pkg.sv'.
+Parsing included file 'vip/uart_vip/uart_driver.sv'.
+Back to file 'vip/uart_vip/uart_pkg.sv'.
+Parsing included file 'vip/uart_vip/uart_monitor.sv'.
+Back to file 'vip/uart_vip/uart_pkg.sv'.
+Parsing included file 'vip/uart_vip/uart_agent.sv'.
+Back to file 'vip/uart_vip/uart_pkg.sv'.
+Parsing design file 'vip/pwm_vip/pwm_pkg.sv'
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Back to file 'vip/pwm_vip/pwm_pkg.sv'.
+Parsing included file 'vip/pwm_vip/pwm_item.sv'.
+Back to file 'vip/pwm_vip/pwm_pkg.sv'.
+Parsing included file 'vip/pwm_vip/pwm_sequencer.sv'.
+Back to file 'vip/pwm_vip/pwm_pkg.sv'.
+Parsing included file 'vip/pwm_vip/pwm_driver.sv'.
+Back to file 'vip/pwm_vip/pwm_pkg.sv'.
+Parsing included file 'vip/pwm_vip/pwm_monitor.sv'.
+Back to file 'vip/pwm_vip/pwm_pkg.sv'.
+Parsing included file 'vip/pwm_vip/pwm_agent.sv'.
+Back to file 'vip/pwm_vip/pwm_pkg.sv'.
+Parsing design file 'tb_soc_uvm_top.sv'
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Back to file 'tb_soc_uvm_top.sv'.
+Parsing included file 'soc_ctrl_if.sv'.
+Back to file 'tb_soc_uvm_top.sv'.
+Parsing included file 'axi_ram_slave.sv'.
+Back to file 'tb_soc_uvm_top.sv'.
+Parsing included file 'soc_uvm_test.sv'.
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+soc_uvm_test.sv, 11
+$unit
+  Package 'uvm_pkg' already wildcard imported. 
+  Ignoring uvm_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Back to file 'soc_uvm_test.sv'.
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+soc_uvm_test.sv, 14
+$unit
+  Package 'gpio_pkg' already wildcard imported. 
+  Ignoring gpio_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+soc_uvm_test.sv, 15
+$unit
+  Package 'uart_pkg' already wildcard imported. 
+  Ignoring uart_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+soc_uvm_test.sv, 16
+$unit
+  Package 'pwm_pkg' already wildcard imported. 
+  Ignoring pwm_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing included file 'soc_ctrl_if.sv'.
+Back to file 'soc_uvm_test.sv'.
+Parsing included file 'soc_uvm_env.sv'.
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+soc_uvm_env.sv, 12
+$unit
+  Package 'uvm_pkg' already wildcard imported. 
+  Ignoring uvm_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Back to file 'soc_uvm_env.sv'.
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+soc_uvm_env.sv, 16
+$unit
+  Package 'gpio_pkg' already wildcard imported. 
+  Ignoring gpio_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+soc_uvm_env.sv, 17
+$unit
+  Package 'uart_pkg' already wildcard imported. 
+  Ignoring uart_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+soc_uvm_env.sv, 18
+$unit
+  Package 'pwm_pkg' already wildcard imported. 
+  Ignoring pwm_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing included file 'scoreboards/gpio_scoreboard.sv'.
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+scoreboards/gpio_scoreboard.sv, 12
+$unit
+  Package 'uvm_pkg' already wildcard imported. 
+  Ignoring uvm_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Back to file 'scoreboards/gpio_scoreboard.sv'.
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+scoreboards/gpio_scoreboard.sv, 14
+$unit
+  Package 'gpio_pkg' already wildcard imported. 
+  Ignoring gpio_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Back to file 'soc_uvm_env.sv'.
+Parsing included file 'scoreboards/uart_scoreboard.sv'.
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+scoreboards/uart_scoreboard.sv, 12
+$unit
+  Package 'uvm_pkg' already wildcard imported. 
+  Ignoring uvm_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Back to file 'scoreboards/uart_scoreboard.sv'.
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+scoreboards/uart_scoreboard.sv, 14
+$unit
+  Package 'uart_pkg' already wildcard imported. 
+  Ignoring uart_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Back to file 'soc_uvm_env.sv'.
+Parsing included file 'scoreboards/pwm_scoreboard.sv'.
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+scoreboards/pwm_scoreboard.sv, 12
+$unit
+  Package 'uvm_pkg' already wildcard imported. 
+  Ignoring uvm_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Back to file 'scoreboards/pwm_scoreboard.sv'.
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+scoreboards/pwm_scoreboard.sv, 14
+$unit
+  Package 'pwm_pkg' already wildcard imported. 
+  Ignoring pwm_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Back to file 'soc_uvm_env.sv'.
+Parsing included file 'soc_virtual_sequencer.sv'.
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+soc_virtual_sequencer.sv, 11
+$unit
+  Package 'uvm_pkg' already wildcard imported. 
+  Ignoring uvm_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Back to file 'soc_virtual_sequencer.sv'.
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+soc_virtual_sequencer.sv, 13
+$unit
+  Package 'gpio_pkg' already wildcard imported. 
+  Ignoring gpio_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+soc_virtual_sequencer.sv, 14
+$unit
+  Package 'uart_pkg' already wildcard imported. 
+  Ignoring uart_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+soc_virtual_sequencer.sv, 15
+$unit
+  Package 'pwm_pkg' already wildcard imported. 
+  Ignoring pwm_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Back to file 'soc_uvm_env.sv'.
+Back to file 'soc_uvm_test.sv'.
+Parsing included file 'sequences/gpio_sequence.sv'.
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+sequences/gpio_sequence.sv, 11
+$unit
+  Package 'uvm_pkg' already wildcard imported. 
+  Ignoring uvm_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Back to file 'sequences/gpio_sequence.sv'.
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+sequences/gpio_sequence.sv, 13
+$unit
+  Package 'gpio_pkg' already wildcard imported. 
+  Ignoring gpio_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Back to file 'soc_uvm_test.sv'.
+Parsing included file 'sequences/uart_sequence.sv'.
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+sequences/uart_sequence.sv, 11
+$unit
+  Package 'uvm_pkg' already wildcard imported. 
+  Ignoring uvm_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Back to file 'sequences/uart_sequence.sv'.
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+sequences/uart_sequence.sv, 13
+$unit
+  Package 'uart_pkg' already wildcard imported. 
+  Ignoring uart_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Back to file 'soc_uvm_test.sv'.
+Parsing included file 'sequences/pwm_sequence.sv'.
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+sequences/pwm_sequence.sv, 11
+$unit
+  Package 'uvm_pkg' already wildcard imported. 
+  Ignoring uvm_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Back to file 'sequences/pwm_sequence.sv'.
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+sequences/pwm_sequence.sv, 13
+$unit
+  Package 'pwm_pkg' already wildcard imported. 
+  Ignoring pwm_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Back to file 'soc_uvm_test.sv'.
+Parsing included file 'sequences/soc_virtual_sequence.sv'.
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+sequences/soc_virtual_sequence.sv, 11
+$unit
+  Package 'uvm_pkg' already wildcard imported. 
+  Ignoring uvm_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing included file '/home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/uvm_macros.svh'.
+Back to file 'sequences/soc_virtual_sequence.sv'.
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+sequences/soc_virtual_sequence.sv, 13
+$unit
+  Package 'gpio_pkg' already wildcard imported. 
+  Ignoring gpio_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+sequences/soc_virtual_sequence.sv, 14
+$unit
+  Package 'uart_pkg' already wildcard imported. 
+  Ignoring uart_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+sequences/soc_virtual_sequence.sv, 15
+$unit
+  Package 'pwm_pkg' already wildcard imported. 
+  Ignoring pwm_pkg::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Back to file 'soc_uvm_test.sv'.
+Back to file 'tb_soc_uvm_top.sv'.
+Top Level Modules:
+       uvm_custom_install_verdi_recording
+       tb_soc_uvm_top
+
+Warning-[AOUP] Attempt to override undefined parameter
+../../rtl/fft_nexhus/bram_memeory.sv, 59
+  Attempting to override undefined parameter "WRITE_DATA_WIDTH_A", will ignore
+  it.
+
+
+Warning-[AOUP] Attempt to override undefined parameter
+../../rtl/fft_nexhus/bram_memeory.sv, 59
+  Attempting to override undefined parameter "WRITE_DATA_WIDTH_B", will ignore
+  it.
+
+TimeScale is 1 ns / 1 ps
+
+Warning-[PCWM-W] Port connection width mismatch
+../../rtl/DMA/dma_axi_wrapper.sv, 62
+"csr_dma #(, , , , , 8, ) u_csr_dma( .i_clk (clk),  .i_rst_n ((~rst)),  .i_awvalid (dma_csr_mosi_i.awvalid),  .o_awready (dma_csr_miso_o.awready),  .i_awid (dma_csr_mosi_i.awid),  .i_awaddr (dma_csr_mosi_i.awaddr),  .i_awprot (dma_csr_mosi_i.awprot),  .i_wvalid (dma_csr_mosi_i.wvalid),  .o_wready (dma_csr_miso_o.wready),  .i_wdata (dma_csr_mosi_i.wdata),  .i_wstrb (dma_csr_mosi_i.wstrb),  .o_bvalid (dma_csr_miso_o.bvalid),  .i_bready (dma_csr_mosi_i.bready),  .o_bid (dma_csr_miso_o.bid),  .o_bresp (dma_csr_miso_o.bresp),  .i_arvalid (dma_csr_mosi_i.arvalid),  .o_arready (dma_csr_miso_o.arready),  .i_arid (dma_csr_mosi_i.arid),  .i_araddr (dma_csr_mosi_i.araddr),  .i_arprot (dma_csr_mosi_i.arprot),  .o_rvalid (dma_csr_miso_o.rvalid),  .i_rready (dma_csr_m ... "
+  The following 32-bit expression is connected to 8-bit port "i_awaddr" of 
+  module "csr_dma", instance "u_csr_dma".
+  Expression: dma_csr_mosi_i.awaddr
+  Instantiated module defined at: "../../rtl/DMA/csr_dma.v", 2
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../../rtl/DMA/dma_axi_wrapper.sv, 62
+"csr_dma #(, , , , , 8, ) u_csr_dma( .i_clk (clk),  .i_rst_n ((~rst)),  .i_awvalid (dma_csr_mosi_i.awvalid),  .o_awready (dma_csr_miso_o.awready),  .i_awid (dma_csr_mosi_i.awid),  .i_awaddr (dma_csr_mosi_i.awaddr),  .i_awprot (dma_csr_mosi_i.awprot),  .i_wvalid (dma_csr_mosi_i.wvalid),  .o_wready (dma_csr_miso_o.wready),  .i_wdata (dma_csr_mosi_i.wdata),  .i_wstrb (dma_csr_mosi_i.wstrb),  .o_bvalid (dma_csr_miso_o.bvalid),  .i_bready (dma_csr_mosi_i.bready),  .o_bid (dma_csr_miso_o.bid),  .o_bresp (dma_csr_miso_o.bresp),  .i_arvalid (dma_csr_mosi_i.arvalid),  .o_arready (dma_csr_miso_o.arready),  .i_arid (dma_csr_mosi_i.arid),  .i_araddr (dma_csr_mosi_i.araddr),  .i_arprot (dma_csr_mosi_i.arprot),  .o_rvalid (dma_csr_miso_o.rvalid),  .i_rready (dma_csr_m ... "
+  The following 32-bit expression is connected to 64-bit port "i_wdata" of 
+  module "csr_dma", instance "u_csr_dma".
+  Expression: dma_csr_mosi_i.wdata
+  Instantiated module defined at: "../../rtl/DMA/csr_dma.v", 2
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../../rtl/DMA/dma_axi_wrapper.sv, 62
+"csr_dma #(, , , , , 8, ) u_csr_dma( .i_clk (clk),  .i_rst_n ((~rst)),  .i_awvalid (dma_csr_mosi_i.awvalid),  .o_awready (dma_csr_miso_o.awready),  .i_awid (dma_csr_mosi_i.awid),  .i_awaddr (dma_csr_mosi_i.awaddr),  .i_awprot (dma_csr_mosi_i.awprot),  .i_wvalid (dma_csr_mosi_i.wvalid),  .o_wready (dma_csr_miso_o.wready),  .i_wdata (dma_csr_mosi_i.wdata),  .i_wstrb (dma_csr_mosi_i.wstrb),  .o_bvalid (dma_csr_miso_o.bvalid),  .i_bready (dma_csr_mosi_i.bready),  .o_bid (dma_csr_miso_o.bid),  .o_bresp (dma_csr_miso_o.bresp),  .i_arvalid (dma_csr_mosi_i.arvalid),  .o_arready (dma_csr_miso_o.arready),  .i_arid (dma_csr_mosi_i.arid),  .i_araddr (dma_csr_mosi_i.araddr),  .i_arprot (dma_csr_mosi_i.arprot),  .o_rvalid (dma_csr_miso_o.rvalid),  .i_rready (dma_csr_m ... "
+  The following 4-bit expression is connected to 8-bit port "i_wstrb" of 
+  module "csr_dma", instance "u_csr_dma".
+  Expression: dma_csr_mosi_i.wstrb
+  Instantiated module defined at: "../../rtl/DMA/csr_dma.v", 2
+  Use +lint=PCWM for more details.
+
+
+Warning-[ENUMASSIGN] Illegal assignment to enum variable
+../../rtl/DMA/dma_axi_wrapper.sv, 62
+dma_axi_wrapper, "csr_dma #(, , , , , 8, ) u_csr_dma( .i_clk (clk),  .i_rst_n ((~rst)),  .i_awvalid (dma_csr_mosi_i.awvalid),  .o_awready (dma_csr_miso_o.awready),  .i_awid (dma_csr_mosi_i.awid),  .i_awaddr (dma_csr_mosi_i.awaddr),  .i_awprot (dma_csr_mosi_i.awprot),  .i_wvalid (dma_csr_mosi_i.wvalid),  .o_wready (dma_csr_miso_o.wready),  .i_wdata (dma_csr_mosi_i.wdata),  .i_wstrb (dma_csr_mosi_i.wstrb),  .o_bvalid (dma_csr_miso_o.bvalid),  .i_bready (dma_csr_mosi_i.bready),  .o_bid (dma_csr_miso_o.bid),  .o_bresp (dma_csr_miso_o.bresp),  .i_arvalid (dma_csr_mosi_i.arvalid),  .o_arready (dma_csr_miso_o.arready),  .i_arid (dma_csr_mosi_i.arid),  .i_araddr (dma_csr_mosi_i.araddr),  .i_arprot (dma_csr_mosi_i.arprot),  .o_rvalid (dma_csr_miso_o.rvalid),  .i_rready (dma_csr_m ... "
+  Only expressions of the enum type can be assigned to an enum variable. 
+  The type wire [1:0] is incompatible with the enum 'axi_resp_t'
+  Expression: o_bresp
+  Use the static cast operator to convert the expression to enum type.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../../rtl/DMA/dma_axi_wrapper.sv, 62
+"csr_dma #(, , , , , 8, ) u_csr_dma( .i_clk (clk),  .i_rst_n ((~rst)),  .i_awvalid (dma_csr_mosi_i.awvalid),  .o_awready (dma_csr_miso_o.awready),  .i_awid (dma_csr_mosi_i.awid),  .i_awaddr (dma_csr_mosi_i.awaddr),  .i_awprot (dma_csr_mosi_i.awprot),  .i_wvalid (dma_csr_mosi_i.wvalid),  .o_wready (dma_csr_miso_o.wready),  .i_wdata (dma_csr_mosi_i.wdata),  .i_wstrb (dma_csr_mosi_i.wstrb),  .o_bvalid (dma_csr_miso_o.bvalid),  .i_bready (dma_csr_mosi_i.bready),  .o_bid (dma_csr_miso_o.bid),  .o_bresp (dma_csr_miso_o.bresp),  .i_arvalid (dma_csr_mosi_i.arvalid),  .o_arready (dma_csr_miso_o.arready),  .i_arid (dma_csr_mosi_i.arid),  .i_araddr (dma_csr_mosi_i.araddr),  .i_arprot (dma_csr_mosi_i.arprot),  .o_rvalid (dma_csr_miso_o.rvalid),  .i_rready (dma_csr_m ... "
+  The following 32-bit expression is connected to 8-bit port "i_araddr" of 
+  module "csr_dma", instance "u_csr_dma".
+  Expression: dma_csr_mosi_i.araddr
+  Instantiated module defined at: "../../rtl/DMA/csr_dma.v", 2
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../../rtl/DMA/dma_axi_wrapper.sv, 62
+"csr_dma #(, , , , , 8, ) u_csr_dma( .i_clk (clk),  .i_rst_n ((~rst)),  .i_awvalid (dma_csr_mosi_i.awvalid),  .o_awready (dma_csr_miso_o.awready),  .i_awid (dma_csr_mosi_i.awid),  .i_awaddr (dma_csr_mosi_i.awaddr),  .i_awprot (dma_csr_mosi_i.awprot),  .i_wvalid (dma_csr_mosi_i.wvalid),  .o_wready (dma_csr_miso_o.wready),  .i_wdata (dma_csr_mosi_i.wdata),  .i_wstrb (dma_csr_mosi_i.wstrb),  .o_bvalid (dma_csr_miso_o.bvalid),  .i_bready (dma_csr_mosi_i.bready),  .o_bid (dma_csr_miso_o.bid),  .o_bresp (dma_csr_miso_o.bresp),  .i_arvalid (dma_csr_mosi_i.arvalid),  .o_arready (dma_csr_miso_o.arready),  .i_arid (dma_csr_mosi_i.arid),  .i_araddr (dma_csr_mosi_i.araddr),  .i_arprot (dma_csr_mosi_i.arprot),  .o_rvalid (dma_csr_miso_o.rvalid),  .i_rready (dma_csr_m ... "
+  The following 32-bit expression is connected to 64-bit port "o_rdata" of 
+  module "csr_dma", instance "u_csr_dma".
+  Expression: dma_csr_miso_o.rdata
+  Instantiated module defined at: "../../rtl/DMA/csr_dma.v", 2
+  Use +lint=PCWM for more details.
+
+
+Warning-[ENUMASSIGN] Illegal assignment to enum variable
+../../rtl/DMA/dma_axi_wrapper.sv, 62
+dma_axi_wrapper, "csr_dma #(, , , , , 8, ) u_csr_dma( .i_clk (clk),  .i_rst_n ((~rst)),  .i_awvalid (dma_csr_mosi_i.awvalid),  .o_awready (dma_csr_miso_o.awready),  .i_awid (dma_csr_mosi_i.awid),  .i_awaddr (dma_csr_mosi_i.awaddr),  .i_awprot (dma_csr_mosi_i.awprot),  .i_wvalid (dma_csr_mosi_i.wvalid),  .o_wready (dma_csr_miso_o.wready),  .i_wdata (dma_csr_mosi_i.wdata),  .i_wstrb (dma_csr_mosi_i.wstrb),  .o_bvalid (dma_csr_miso_o.bvalid),  .i_bready (dma_csr_mosi_i.bready),  .o_bid (dma_csr_miso_o.bid),  .o_bresp (dma_csr_miso_o.bresp),  .i_arvalid (dma_csr_mosi_i.arvalid),  .o_arready (dma_csr_miso_o.arready),  .i_arid (dma_csr_mosi_i.arid),  .i_araddr (dma_csr_mosi_i.araddr),  .i_arprot (dma_csr_mosi_i.arprot),  .o_rvalid (dma_csr_miso_o.rvalid),  .i_rready (dma_csr_m ... "
+  Only expressions of the enum type can be assigned to an enum variable. 
+  The type wire [1:0] is incompatible with the enum 'axi_resp_t'
+  Expression: o_rresp
+  Use the static cast operator to convert the expression to enum type.
+
+
+Warning-[INTFDV] VCD dumping of interface/program/package
+tb_soc_uvm_top.sv, 544
+  Selective VCD dumping of interface 'gpio_if_0000' is not supported.  
+  Selective VCD dumping for interfaces, packages and programs is not 
+  supported.
+  Use full VCD dumping '$dumpvars(0)', or use VPD or FSDB dumping, recompile 
+  with '-debug_access'.
+
+Notice: Ports coerced to inout, use -notice for details
+Starting vcs inline pass...
+
+84 modules and 0 UDP read.
+recompiling package vcs_paramclassrepository
+recompiling package _vcs_DPI_package
+recompiling package uvm_pkg
+recompiling package _vcs_msglog
+recompiling module uvm_custom_install_verdi_recording
+recompiling module priority_encoder
+recompiling module arbiter
+recompiling module axi_interconnect_wrap_3x15
+recompiling module axi_internal_fifo
+recompiling module axi_uart_top
+recompiling module aes_sbox
+recompiling module aes_inv_sbox
+recompiling module fft_accel_top
+recompiling module fft_ctrl_axi4_bridge
+recompiling module fft_mem_axi4_wrap
+recompiling package amba_axi_pkg
+recompiling package dma_utils_pkg
+recompiling module rggen_bit_field
+recompiling module rggen_default_register
+recompiling module rggen_axi4lite_adapter
+recompiling module csr_dma
+recompiling module dma_fifo
+recompiling module dma_fsm
+recompiling module dma_streamer
+recompiling module dma_axi_wrapper
+recompiling package el2_mubi_pkg
+recompiling package el2_pkg
+recompiling package el2_lockstep_pkg
+recompiling module el2_mem_if
+recompiling module rvdffe
+recompiling module rvdffie
+recompiling module rvbradder
+recompiling module rvmaskandmatch
+recompiling module rvrangecheck
+recompiling module rvecc_encode
+recompiling module rvecc_decode
+recompiling module rvecc_encode_64
+recompiling module rvecc_decode_64
+recompiling module rvoclkhdr
+recompiling module el2_btb_tag_hash
+recompiling module el2_btb_addr_hash
+recompiling module el2_btb_ghr_hash
+recompiling module el2_pmp
+recompiling module el2_pic_ctrl
+recompiling module el2_cmp_and_mux
+recompiling module el2_configurable_gw
+recompiling module el2_dma_ctrl
+recompiling module el2_ifu_bp_ctl
+recompiling module el2_ifu_iccm_mem
+recompiling module el2_ifu
+50 of 84 modules done
+recompiling module el2_dec_dec_ctl
+recompiling module el2_dec_gpr_ctl
+recompiling module el2_dec_ib_ctl
+recompiling module el2_dec_pmp_ctl
+recompiling module el2_dec_tlu_ctl
+recompiling module el2_dec_timer_ctl
+recompiling module el2_dec_trigger
+recompiling module el2_dec
+recompiling module el2_exu
+recompiling module el2_lsu_clkdomain
+recompiling module el2_lsu_bus_intf
+recompiling module el2_lsu_ecc
+recompiling module el2_lsu_trigger
+recompiling module el2_lsu
+recompiling module dmi_mux
+recompiling module el2_mem
+recompiling module el2_veer_wrapper
+recompiling module axi64_to_axi32_adapter
+recompiling module veer_wrapper_axi32
+recompiling module axi4lite_slave_adapter
+recompiling module axi4_to_axi4lite_bridge
+recompiling module gpio_wrapper
+recompiling module gpio_axi
+recompiling module timer_axi
+recompiling module main_top
+recompiling module gpio_if
+recompiling module uart_if
+recompiling module pwm_if
+recompiling package gpio_pkg
+recompiling package uart_pkg
+recompiling package pwm_pkg
+recompiling module soc_ctrl_if
+recompiling module axi_ram_slave
+recompiling module tb_soc_uvm_top
+All of 84 modules done
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+g++ -w  -pipe -DVCSMX -DUVM_DPI_DO_TYPE_CHECK -fPIC -O -I/home/student/snps_tools_target/vcs/U-2023.03/include \
+-c /home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/dpi/uvm_dpi.cc
+g++ -w  -pipe -DVCSMX -DUVM_DPI_DO_TYPE_CHECK -fPIC -O -I/home/student/snps_tools_target/vcs/U-2023.03/include \
+-c /home/student/snps_tools_target/vcs/U-2023.03/etc/uvm-1.2/verdi/dpi/uvm_verdi_dpi.cpp \
+
+if [ -x ../simv_uvm_fsdb ]; then chmod a-x ../simv_uvm_fsdb; fi
+g++  -o ../simv_uvm_fsdb      -rdynamic  -Wl,-rpath='$ORIGIN'/simv_uvm_fsdb.daidir \
+-Wl,-rpath=./simv_uvm_fsdb.daidir -Wl,-rpath=/home/student/snps_tools_target/vcs/U-2023.03/linux64/lib \
+-L/home/student/snps_tools_target/vcs/U-2023.03/linux64/lib  -Wl,-rpath-link=./  \
+/usr/lib64/libnuma.so.1 uvm_dpi.o uvm_verdi_dpi.o   objs/amcQw_d.o   _68281_archive_1.so \
+SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o \
+-lvirsim -lerrorinf -lsnpsmalloc -lvfs /home/student/snps_tools_target/verdi/U-2023.03-SP1/share/PLI/VCS/linux64/pli.a \
+-lvcsnew -lsimprofile -luclinative /home/student/snps_tools_target/vcs/U-2023.03/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive       ./../simv_uvm_fsdb.daidir/vc_hdrs.o \
+_vcs_pli_stub_.o   /home/student/snps_tools_target/vcs/U-2023.03/linux64/lib/vcs_save_restore_new.o \
+/home/student/snps_tools_target/verdi/U-2023.03-SP1/share/PLI/VCS/LINUX64/pli.a -ldl \
+-lm  -lc -lpthread -ldl 
+../simv_uvm_fsdb up to date
+CPU time: 16.690 seconds to compile + .384 seconds to elab + .605 seconds to link
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 2 warning(s)

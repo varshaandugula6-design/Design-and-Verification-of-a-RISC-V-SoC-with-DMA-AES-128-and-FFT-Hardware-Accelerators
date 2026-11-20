@@ -1,0 +1,258 @@
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'Rocky Linux release 8.10 (Green Obsidian)' is not supported 
+  on 'x86_64' officially, assuming linux compatibility by default. Set 
+  VCS_ARCH_OVERRIDE to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+Command: vcs -full64 -sverilog -timescale=1ns/1ps +v2k -f run_veer_standalone.f -top \
+tb_veer_standalone -o simv_veer_standalone -l compile_veer_standalone.log
+                         Chronologic VCS (TM)
+         Version U-2023.03_Full64 -- Fri Oct 30 13:21:12 2026
+
+                    Copyright (c) 1991 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '../rtl/Cores-VeeR-EL2/snapshots/default/common_defines.vh'
+Parsing design file '../rtl/Cores-VeeR-EL2/design/lib/el2_assert.sv'
+Parsing design file '../rtl/Cores-VeeR-EL2/design/el2_mubi_pkg.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/common_defines.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/el2_mubi_pkg.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/include/el2_def.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_pdef.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/include/el2_def.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/el2_lockstep_pkg.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/el2_lockstep_pkg.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/lib/el2_mem_if.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/lib/el2_mem_if.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/lib/beh_lib.sv'
+Parsing design file '../rtl/Cores-VeeR-EL2/design/lib/mem_lib.sv'
+Parsing design file '../rtl/Cores-VeeR-EL2/design/lib/el2_lib.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/lib/el2_lib.sv'.
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/lib/el2_lib.sv'.
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/lib/el2_lib.sv'.
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/lib/el2_lib.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/el2_pmp.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/el2_pmp.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/el2_pic_ctrl.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/el2_pic_ctrl.sv'.
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/pic_map_auto.svh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/el2_pic_ctrl.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/el2_dma_ctrl.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/el2_dma_ctrl.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_aln_ctl.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_aln_ctl.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_compress_ctl.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_compress_ctl.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_ifc_ctl.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_ifc_ctl.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_bp_ctl.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_bp_ctl.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_ic_mem.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_ic_mem.sv'.
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_ic_mem.sv'.
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_ic_mem.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_mem_ctl.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_mem_ctl.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_iccm_mem.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu_iccm_mem.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/ifu/el2_ifu.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/dec/el2_dec_decode_ctl.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/dec/el2_dec_decode_ctl.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/dec/el2_dec_gpr_ctl.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/dec/el2_dec_gpr_ctl.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/dec/el2_dec_ib_ctl.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/dec/el2_dec_ib_ctl.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/dec/el2_dec_pmp_ctl.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/dec/el2_dec_pmp_ctl.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/dec/el2_dec_tlu_ctl.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/dec/el2_dec_tlu_ctl.sv'.
+Parsing included file '../rtl/Cores-VeeR-EL2/design/include/el2_dec_csr_equ_m.svh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/dec/el2_dec_tlu_ctl.sv'.
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/dec/el2_dec_tlu_ctl.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/dec/el2_dec_trigger.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/dec/el2_dec_trigger.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/dec/el2_dec.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/dec/el2_dec.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/exu/el2_exu_alu_ctl.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/exu/el2_exu_alu_ctl.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/exu/el2_exu_mul_ctl.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/exu/el2_exu_mul_ctl.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/exu/el2_exu_div_ctl.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/exu/el2_exu_div_ctl.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/exu/el2_exu.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/exu/el2_exu.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_clkdomain.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_clkdomain.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_addrcheck.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_addrcheck.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_lsc_ctl.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_lsc_ctl.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_stbuf.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_stbuf.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_bus_buffer.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_bus_buffer.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_bus_intf.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_bus_intf.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_ecc.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_ecc.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_dccm_mem.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_dccm_mem.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_dccm_ctl.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_dccm_ctl.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_trigger.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu_trigger.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/lsu/el2_lsu.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/dbg/el2_dbg.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/dbg/el2_dbg.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/dmi/dmi_mux.v'
+Parsing design file '../rtl/Cores-VeeR-EL2/design/dmi/dmi_wrapper.v'
+Parsing design file '../rtl/Cores-VeeR-EL2/design/dmi/dmi_jtag_to_core_sync.v'
+Parsing design file '../rtl/Cores-VeeR-EL2/design/dmi/rvjtag_tap.v'
+Parsing design file '../rtl/Cores-VeeR-EL2/design/lib/ahb_to_axi4.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/lib/ahb_to_axi4.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/lib/axi4_to_ahb.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/lib/axi4_to_ahb.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/el2_veer.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/el2_veer.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/el2_mem.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/el2_mem.sv'.
+Parsing design file '../rtl/Cores-VeeR-EL2/design/el2_veer_wrapper.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/common_defines.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/el2_veer_wrapper.sv'.
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/Cores-VeeR-EL2/design/el2_veer_wrapper.sv'.
+Parsing design file '../rtl/common/axi64_to_axi32_adapter.sv'
+Parsing design file '../rtl/veer_wrapper_axi32.sv'
+Parsing included file '../rtl/Cores-VeeR-EL2/snapshots/default/el2_param.vh'.
+Back to file '../rtl/veer_wrapper_axi32.sv'.
+Parsing design file '../tb/tb_veer_standalone.sv'
+Top Level Modules:
+       tb_veer_standalone
+TimeScale is 1 ns / 1 ps
+Notice: Ports coerced to inout, use -notice for details
+Starting vcs inline pass...
+
+46 modules and 0 UDP read.
+recompiling package el2_mubi_pkg
+recompiling package el2_pkg
+recompiling package el2_lockstep_pkg
+recompiling module el2_mem_if
+recompiling module rvdff
+recompiling module rvdffs
+recompiling module rvdffsc
+recompiling module rvdff_fpga
+recompiling module rvdffs_fpga
+recompiling module rvdffe
+recompiling module rvdffpcie
+recompiling module rvdfflie
+recompiling module rvdffie
+recompiling module rvbradder
+recompiling module rvmaskandmatch
+recompiling module rvecc_encode
+recompiling module rvecc_decode
+recompiling module rvecc_encode_64
+recompiling module rvecc_decode_64
+recompiling module rvoclkhdr
+recompiling module el2_btb_addr_hash
+recompiling module el2_btb_ghr_hash
+recompiling module el2_pmp
+recompiling module el2_pic_ctrl
+recompiling module el2_configurable_gw
+recompiling module el2_dma_ctrl
+recompiling module el2_ifu_aln_ctl
+recompiling module el2_ifu_ifc_ctl
+recompiling module el2_ifu_bp_ctl
+recompiling module el2_dec_pmp_ctl
+recompiling module el2_dec_tlu_ctl
+recompiling module el2_dec
+recompiling module el2_exu
+recompiling module el2_lsu_clkdomain
+recompiling module el2_lsu_lsc_ctl
+recompiling module el2_lsu_stbuf
+recompiling module el2_lsu_ecc
+recompiling module el2_lsu_trigger
+recompiling module el2_lsu
+recompiling module el2_dbg
+recompiling module dmi_mux
+recompiling module dmi_wrapper
+recompiling module el2_mem
+recompiling module el2_veer_wrapper
+recompiling module axi64_to_axi32_adapter
+recompiling module tb_veer_standalone
+All of 46 modules done
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv_veer_standalone ]; then chmod a-x ../simv_veer_standalone; fi
+g++  -o ../simv_veer_standalone      -rdynamic  -Wl,-rpath='$ORIGIN'/simv_veer_standalone.daidir \
+-Wl,-rpath=./simv_veer_standalone.daidir -Wl,-rpath=/home/student/snps_tools_target/vcs/U-2023.03/linux64/lib \
+-L/home/student/snps_tools_target/vcs/U-2023.03/linux64/lib  -Wl,-rpath-link=./  \
+/usr/lib64/libnuma.so.1   objs/amcQw_d.o   _94823_archive_1.so  SIM_l.o      rmapats_mop.o \
+rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o            -lvirsim -lerrorinf \
+-lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /home/student/snps_tools_target/vcs/U-2023.03/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   \
+/home/student/snps_tools_target/vcs/U-2023.03/linux64/lib/vcs_save_restore_new.o \
+-ldl  -lc -lm -lpthread -ldl 
+../simv_veer_standalone up to date
+CPU time: 5.455 seconds to compile + .292 seconds to elab + .147 seconds to link

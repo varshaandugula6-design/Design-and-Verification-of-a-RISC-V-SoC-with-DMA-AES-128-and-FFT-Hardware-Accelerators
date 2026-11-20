@@ -1,0 +1,258 @@
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'Rocky Linux release 8.10 (Green Obsidian)' is not supported 
+  on 'x86_64' officially, assuming linux compatibility by default. Set 
+  VCS_ARCH_OVERRIDE to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+Command: vcs -full64 -sverilog -timescale=1ns/1ps -debug_access+all -kdb -f run_integration.f \
+-l compile_dma.log -o simv
+                         Chronologic VCS (TM)
+         Version U-2023.03_Full64 -- Sat Oct 17 12:15:53 2026
+
+                    Copyright (c) 1991 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '../rtl/interconnect/priority_encoder.v'
+Parsing design file '../rtl/interconnect/arbiter.v'
+Parsing design file '../rtl/interconnect/axi_interconnect.v'
+Parsing design file '../rtl/interconnect/axi_interconnect_wrap_3x15.v'
+Parsing design file '../rtl/UART/axi_internal_fifo.v'
+Parsing design file '../rtl/UART/uart_parity_bit_compute.v'
+Parsing design file '../rtl/UART/uart_transmitter.v'
+Parsing design file '../rtl/UART/uart_receiver.v'
+Parsing design file '../rtl/UART/uart_controller.v'
+Parsing design file '../rtl/UART/axi_uart_top.v'
+Parsing included file '../rtl/UART/include/axi_uart_defines.vh'.
+Back to file '../rtl/UART/axi_uart_top.v'.
+Parsing included file '../rtl/UART/include/axi_uart.vh'.
+Back to file '../rtl/UART/axi_uart_top.v'.
+Parsing design file '../rtl/verilog_aes/timescale.v'
+Parsing design file '../rtl/verilog_aes/aes_rcon.v'
+Parsing included file '../rtl/verilog_aes/timescale.v'.
+Back to file '../rtl/verilog_aes/aes_rcon.v'.
+Parsing design file '../rtl/verilog_aes/aes_sbox.v'
+Parsing included file '../rtl/verilog_aes/timescale.v'.
+Back to file '../rtl/verilog_aes/aes_sbox.v'.
+Parsing design file '../rtl/verilog_aes/aes_inv_sbox.v'
+Parsing included file '../rtl/verilog_aes/timescale.v'.
+Back to file '../rtl/verilog_aes/aes_inv_sbox.v'.
+Parsing design file '../rtl/verilog_aes/aes_key_expand_128.v'
+Parsing included file '../rtl/verilog_aes/timescale.v'.
+Back to file '../rtl/verilog_aes/aes_key_expand_128.v'.
+Parsing design file '../rtl/verilog_aes/aes_cipher_top.v'
+Parsing included file '../rtl/verilog_aes/timescale.v'.
+Back to file '../rtl/verilog_aes/aes_cipher_top.v'.
+Parsing design file '../rtl/verilog_aes/aes_inv_cipher_top.v'
+Parsing included file '../rtl/verilog_aes/timescale.v'.
+Back to file '../rtl/verilog_aes/aes_inv_cipher_top.v'.
+Parsing design file '../rtl/aes_axi_slave/aes_axi_slave.sv'
+Parsing design file '../rtl/aes_axi_slave/aes_axi_slave_axi4.sv'
+Parsing design file '../rtl/fft_nexhus/xpm_memory_tdpram_model.sv'
+Parsing design file '../rtl/fft_nexhus/bram_memeory.sv'
+Parsing design file '../rtl/fft_nexhus/twiddle_rom.sv'
+Parsing design file '../rtl/fft_nexhus/add_sub_sat_s1_q15.sv'
+Parsing design file '../rtl/fft_nexhus/cmulq15.sv'
+Parsing design file '../rtl/fft_nexhus/fft_atomic_p1.sv'
+Parsing design file '../rtl/fft_nexhus/fft_stage_core.sv'
+Parsing design file '../rtl/fft_nexhus/fft_stage_core_controller.sv'
+Parsing design file '../rtl/fft_nexhus/fft_top.sv'
+Parsing design file '../rtl/fft_nexhus/fft_loadstore_wrapper.sv'
+Parsing design file '../rtl/fft_nexhus/fft_ctrl_axil.sv'
+Parsing design file '../rtl/fft_nexhus/fft_mem_axi4_slave.sv'
+Parsing design file '../rtl/fft_nexhus/fft_accel_fft_top.sv'
+Parsing design file '../rtl/fft_nexhus/fft_ctrl_axi4_bridge.sv'
+Parsing design file '../rtl/fft_nexhus/fft_mem_axi4_wrap.sv'
+Parsing design file '../rtl/DMA/amba_axi_pkg.sv'
+Parsing design file '../rtl/DMA/dma_utils_pkg.sv'
+Parsing included file '../rtl/DMA/dma_pkg.svh'.
+Back to file '../rtl/DMA/dma_utils_pkg.sv'.
+Parsing design file '../rtl/DMA/rggen_or_reducer.v'
+Parsing design file '../rtl/DMA/rggen_mux.v'
+Parsing design file '../rtl/DMA/rggen_bit_field.v'
+Parsing included file '../rtl/DMA/rggen_rtl_macros.vh'.
+Back to file '../rtl/DMA/rggen_bit_field.v'.
+Parsing design file '../rtl/DMA/rggen_bit_field_w01trg.v'
+Parsing design file '../rtl/DMA/rggen_default_register.v'
+Parsing design file '../rtl/DMA/rggen_indirect_register.v'
+Parsing design file '../rtl/DMA/rggen_external_register.v'
+Parsing design file '../rtl/DMA/rggen_register_common.v'
+Parsing design file '../rtl/DMA/rggen_address_decoder.v'
+Parsing design file '../rtl/DMA/rggen_adapter_common.v'
+Parsing design file '../rtl/DMA/rggen_axi4lite_skid_buffer.v'
+Parsing design file '../rtl/DMA/rggen_axi4lite_bridge.v'
+Parsing design file '../rtl/DMA/rggen_axi4lite_adapter.v'
+Parsing design file '../rtl/DMA/csr_dma.v'
+Parsing design file '../rtl/DMA/dma_fifo.sv'
+Parsing design file '../rtl/DMA/dma_fsm.sv'
+Parsing design file '../rtl/DMA/dma_streamer.sv'
+Parsing design file '../rtl/DMA/dma_axi_if.sv'
+Parsing design file '../rtl/DMA/dma_func_wrapper.sv'
+Parsing design file '../rtl/DMA/dma_axi_wrapper.sv'
+Parsing design file '../rtl/main_top.v'
+Parsing design file '../tb/tb_main_top.sv'
+Top Level Modules:
+       rggen_bit_field_w01trg
+       rggen_indirect_register
+       rggen_external_register
+       rggen_axi4lite_bridge
+       tb_main_top
+
+Warning-[AOUP] Attempt to override undefined parameter
+../rtl/fft_nexhus/bram_memeory.sv, 59
+  Attempting to override undefined parameter "WRITE_DATA_WIDTH_A", will ignore
+  it.
+
+
+Warning-[AOUP] Attempt to override undefined parameter
+../rtl/fft_nexhus/bram_memeory.sv, 59
+  Attempting to override undefined parameter "WRITE_DATA_WIDTH_B", will ignore
+  it.
+
+TimeScale is 1 ns / 1 ps
+
+Warning-[PCWM-W] Port connection width mismatch
+../rtl/DMA/dma_axi_wrapper.sv, 62
+"csr_dma #(, , , , , 8, ) u_csr_dma( .i_clk (clk),  .i_rst_n ((~rst)),  .i_awvalid (dma_csr_mosi_i.awvalid),  .o_awready (dma_csr_miso_o.awready),  .i_awid (dma_csr_mosi_i.awid),  .i_awaddr (dma_csr_mosi_i.awaddr),  .i_awprot (dma_csr_mosi_i.awprot),  .i_wvalid (dma_csr_mosi_i.wvalid),  .o_wready (dma_csr_miso_o.wready),  .i_wdata (dma_csr_mosi_i.wdata),  .i_wstrb (dma_csr_mosi_i.wstrb),  .o_bvalid (dma_csr_miso_o.bvalid),  .i_bready (dma_csr_mosi_i.bready),  .o_bid (dma_csr_miso_o.bid),  .o_bresp (dma_csr_miso_o.bresp),  .i_arvalid (dma_csr_mosi_i.arvalid),  .o_arready (dma_csr_miso_o.arready),  .i_arid (dma_csr_mosi_i.arid),  .i_araddr (dma_csr_mosi_i.araddr),  .i_arprot (dma_csr_mosi_i.arprot),  .o_rvalid (dma_csr_miso_o.rvalid),  .i_rready (dma_csr_m ... "
+  The following 32-bit expression is connected to 8-bit port "i_awaddr" of 
+  module "csr_dma", instance "u_csr_dma".
+  Expression: dma_csr_mosi_i.awaddr
+  Instantiated module defined at: "../rtl/DMA/csr_dma.v", 2
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../rtl/DMA/dma_axi_wrapper.sv, 62
+"csr_dma #(, , , , , 8, ) u_csr_dma( .i_clk (clk),  .i_rst_n ((~rst)),  .i_awvalid (dma_csr_mosi_i.awvalid),  .o_awready (dma_csr_miso_o.awready),  .i_awid (dma_csr_mosi_i.awid),  .i_awaddr (dma_csr_mosi_i.awaddr),  .i_awprot (dma_csr_mosi_i.awprot),  .i_wvalid (dma_csr_mosi_i.wvalid),  .o_wready (dma_csr_miso_o.wready),  .i_wdata (dma_csr_mosi_i.wdata),  .i_wstrb (dma_csr_mosi_i.wstrb),  .o_bvalid (dma_csr_miso_o.bvalid),  .i_bready (dma_csr_mosi_i.bready),  .o_bid (dma_csr_miso_o.bid),  .o_bresp (dma_csr_miso_o.bresp),  .i_arvalid (dma_csr_mosi_i.arvalid),  .o_arready (dma_csr_miso_o.arready),  .i_arid (dma_csr_mosi_i.arid),  .i_araddr (dma_csr_mosi_i.araddr),  .i_arprot (dma_csr_mosi_i.arprot),  .o_rvalid (dma_csr_miso_o.rvalid),  .i_rready (dma_csr_m ... "
+  The following 32-bit expression is connected to 64-bit port "i_wdata" of 
+  module "csr_dma", instance "u_csr_dma".
+  Expression: dma_csr_mosi_i.wdata
+  Instantiated module defined at: "../rtl/DMA/csr_dma.v", 2
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../rtl/DMA/dma_axi_wrapper.sv, 62
+"csr_dma #(, , , , , 8, ) u_csr_dma( .i_clk (clk),  .i_rst_n ((~rst)),  .i_awvalid (dma_csr_mosi_i.awvalid),  .o_awready (dma_csr_miso_o.awready),  .i_awid (dma_csr_mosi_i.awid),  .i_awaddr (dma_csr_mosi_i.awaddr),  .i_awprot (dma_csr_mosi_i.awprot),  .i_wvalid (dma_csr_mosi_i.wvalid),  .o_wready (dma_csr_miso_o.wready),  .i_wdata (dma_csr_mosi_i.wdata),  .i_wstrb (dma_csr_mosi_i.wstrb),  .o_bvalid (dma_csr_miso_o.bvalid),  .i_bready (dma_csr_mosi_i.bready),  .o_bid (dma_csr_miso_o.bid),  .o_bresp (dma_csr_miso_o.bresp),  .i_arvalid (dma_csr_mosi_i.arvalid),  .o_arready (dma_csr_miso_o.arready),  .i_arid (dma_csr_mosi_i.arid),  .i_araddr (dma_csr_mosi_i.araddr),  .i_arprot (dma_csr_mosi_i.arprot),  .o_rvalid (dma_csr_miso_o.rvalid),  .i_rready (dma_csr_m ... "
+  The following 4-bit expression is connected to 8-bit port "i_wstrb" of 
+  module "csr_dma", instance "u_csr_dma".
+  Expression: dma_csr_mosi_i.wstrb
+  Instantiated module defined at: "../rtl/DMA/csr_dma.v", 2
+  Use +lint=PCWM for more details.
+
+
+Warning-[ENUMASSIGN] Illegal assignment to enum variable
+../rtl/DMA/dma_axi_wrapper.sv, 62
+dma_axi_wrapper, "csr_dma #(, , , , , 8, ) u_csr_dma( .i_clk (clk),  .i_rst_n ((~rst)),  .i_awvalid (dma_csr_mosi_i.awvalid),  .o_awready (dma_csr_miso_o.awready),  .i_awid (dma_csr_mosi_i.awid),  .i_awaddr (dma_csr_mosi_i.awaddr),  .i_awprot (dma_csr_mosi_i.awprot),  .i_wvalid (dma_csr_mosi_i.wvalid),  .o_wready (dma_csr_miso_o.wready),  .i_wdata (dma_csr_mosi_i.wdata),  .i_wstrb (dma_csr_mosi_i.wstrb),  .o_bvalid (dma_csr_miso_o.bvalid),  .i_bready (dma_csr_mosi_i.bready),  .o_bid (dma_csr_miso_o.bid),  .o_bresp (dma_csr_miso_o.bresp),  .i_arvalid (dma_csr_mosi_i.arvalid),  .o_arready (dma_csr_miso_o.arready),  .i_arid (dma_csr_mosi_i.arid),  .i_araddr (dma_csr_mosi_i.araddr),  .i_arprot (dma_csr_mosi_i.arprot),  .o_rvalid (dma_csr_miso_o.rvalid),  .i_rready (dma_csr_m ... "
+  Only expressions of the enum type can be assigned to an enum variable. 
+  The type wire [1:0] is incompatible with the enum 'axi_resp_t'
+  Expression: o_bresp
+  Use the static cast operator to convert the expression to enum type.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../rtl/DMA/dma_axi_wrapper.sv, 62
+"csr_dma #(, , , , , 8, ) u_csr_dma( .i_clk (clk),  .i_rst_n ((~rst)),  .i_awvalid (dma_csr_mosi_i.awvalid),  .o_awready (dma_csr_miso_o.awready),  .i_awid (dma_csr_mosi_i.awid),  .i_awaddr (dma_csr_mosi_i.awaddr),  .i_awprot (dma_csr_mosi_i.awprot),  .i_wvalid (dma_csr_mosi_i.wvalid),  .o_wready (dma_csr_miso_o.wready),  .i_wdata (dma_csr_mosi_i.wdata),  .i_wstrb (dma_csr_mosi_i.wstrb),  .o_bvalid (dma_csr_miso_o.bvalid),  .i_bready (dma_csr_mosi_i.bready),  .o_bid (dma_csr_miso_o.bid),  .o_bresp (dma_csr_miso_o.bresp),  .i_arvalid (dma_csr_mosi_i.arvalid),  .o_arready (dma_csr_miso_o.arready),  .i_arid (dma_csr_mosi_i.arid),  .i_araddr (dma_csr_mosi_i.araddr),  .i_arprot (dma_csr_mosi_i.arprot),  .o_rvalid (dma_csr_miso_o.rvalid),  .i_rready (dma_csr_m ... "
+  The following 32-bit expression is connected to 8-bit port "i_araddr" of 
+  module "csr_dma", instance "u_csr_dma".
+  Expression: dma_csr_mosi_i.araddr
+  Instantiated module defined at: "../rtl/DMA/csr_dma.v", 2
+  Use +lint=PCWM for more details.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../rtl/DMA/dma_axi_wrapper.sv, 62
+"csr_dma #(, , , , , 8, ) u_csr_dma( .i_clk (clk),  .i_rst_n ((~rst)),  .i_awvalid (dma_csr_mosi_i.awvalid),  .o_awready (dma_csr_miso_o.awready),  .i_awid (dma_csr_mosi_i.awid),  .i_awaddr (dma_csr_mosi_i.awaddr),  .i_awprot (dma_csr_mosi_i.awprot),  .i_wvalid (dma_csr_mosi_i.wvalid),  .o_wready (dma_csr_miso_o.wready),  .i_wdata (dma_csr_mosi_i.wdata),  .i_wstrb (dma_csr_mosi_i.wstrb),  .o_bvalid (dma_csr_miso_o.bvalid),  .i_bready (dma_csr_mosi_i.bready),  .o_bid (dma_csr_miso_o.bid),  .o_bresp (dma_csr_miso_o.bresp),  .i_arvalid (dma_csr_mosi_i.arvalid),  .o_arready (dma_csr_miso_o.arready),  .i_arid (dma_csr_mosi_i.arid),  .i_araddr (dma_csr_mosi_i.araddr),  .i_arprot (dma_csr_mosi_i.arprot),  .o_rvalid (dma_csr_miso_o.rvalid),  .i_rready (dma_csr_m ... "
+  The following 32-bit expression is connected to 64-bit port "o_rdata" of 
+  module "csr_dma", instance "u_csr_dma".
+  Expression: dma_csr_miso_o.rdata
+  Instantiated module defined at: "../rtl/DMA/csr_dma.v", 2
+  Use +lint=PCWM for more details.
+
+
+Warning-[ENUMASSIGN] Illegal assignment to enum variable
+../rtl/DMA/dma_axi_wrapper.sv, 62
+dma_axi_wrapper, "csr_dma #(, , , , , 8, ) u_csr_dma( .i_clk (clk),  .i_rst_n ((~rst)),  .i_awvalid (dma_csr_mosi_i.awvalid),  .o_awready (dma_csr_miso_o.awready),  .i_awid (dma_csr_mosi_i.awid),  .i_awaddr (dma_csr_mosi_i.awaddr),  .i_awprot (dma_csr_mosi_i.awprot),  .i_wvalid (dma_csr_mosi_i.wvalid),  .o_wready (dma_csr_miso_o.wready),  .i_wdata (dma_csr_mosi_i.wdata),  .i_wstrb (dma_csr_mosi_i.wstrb),  .o_bvalid (dma_csr_miso_o.bvalid),  .i_bready (dma_csr_mosi_i.bready),  .o_bid (dma_csr_miso_o.bid),  .o_bresp (dma_csr_miso_o.bresp),  .i_arvalid (dma_csr_mosi_i.arvalid),  .o_arready (dma_csr_miso_o.arready),  .i_arid (dma_csr_mosi_i.arid),  .i_araddr (dma_csr_mosi_i.araddr),  .i_arprot (dma_csr_mosi_i.arprot),  .o_rvalid (dma_csr_miso_o.rvalid),  .i_rready (dma_csr_m ... "
+  Only expressions of the enum type can be assigned to an enum variable. 
+  The type wire [1:0] is incompatible with the enum 'axi_resp_t'
+  Expression: o_rresp
+  Use the static cast operator to convert the expression to enum type.
+
+
+Warning-[ENUMASSIGN] Illegal assignment to enum variable
+../rtl/main_top.v, 2408
+main_top, "dma_csr_mosi.awprot = m13_axi_awprot;"
+  Only expressions of the enum type can be assigned to an enum variable. 
+  The type wire [2:0] is incompatible with the enum 'axi_prot_t'
+  Expression: m13_axi_awprot
+  Use the static cast operator to convert the expression to enum type.
+
+
+Warning-[ENUMASSIGN] Illegal assignment to enum variable
+../rtl/main_top.v, 2416
+main_top, "dma_csr_mosi.arprot = m13_axi_arprot;"
+  Only expressions of the enum type can be assigned to an enum variable. 
+  The type wire [2:0] is incompatible with the enum 'axi_prot_t'
+  Expression: m13_axi_arprot
+  Use the static cast operator to convert the expression to enum type.
+
+Notice: Ports coerced to inout, use -notice for details
+Starting vcs inline pass...
+
+28 modules and 0 UDP read.
+recompiling module priority_encoder
+recompiling module arbiter
+recompiling module axi_interconnect_wrap_3x15
+recompiling module axi_internal_fifo
+recompiling module axi_uart_top
+recompiling module aes_sbox
+recompiling module aes_inv_sbox
+recompiling module fft_accel_top
+recompiling module fft_ctrl_axi4_bridge
+recompiling module fft_mem_axi4_wrap
+recompiling package amba_axi_pkg
+recompiling package dma_utils_pkg
+recompiling module rggen_bit_field
+recompiling module rggen_bit_field_w01trg
+recompiling module rggen_default_register
+recompiling module rggen_indirect_register
+recompiling module rggen_external_register
+recompiling module rggen_address_decoder
+recompiling module rggen_axi4lite_bridge
+recompiling module rggen_axi4lite_adapter
+recompiling module csr_dma
+recompiling module dma_fifo
+recompiling module dma_fsm
+recompiling module dma_streamer
+recompiling module dma_axi_wrapper
+recompiling module main_top
+recompiling module axi_ram_slave
+recompiling module tb_main_top
+All of 28 modules done
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/home/student/snps_tools_target/vcs/U-2023.03/linux64/lib -L/home/student/snps_tools_target/vcs/U-2023.03/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _35229_archive_1.so \
+SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o \
+-lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /home/student/snps_tools_target/vcs/U-2023.03/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   \
+/home/student/snps_tools_target/vcs/U-2023.03/linux64/lib/vcs_save_restore_new.o \
+/home/student/snps_tools_target/verdi/U-2023.03-SP1/share/PLI/VCS/LINUX64/pli.a -ldl \
+-lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: 1.566 seconds to compile + .222 seconds to elab + .150 seconds to link
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 2 warning(s)

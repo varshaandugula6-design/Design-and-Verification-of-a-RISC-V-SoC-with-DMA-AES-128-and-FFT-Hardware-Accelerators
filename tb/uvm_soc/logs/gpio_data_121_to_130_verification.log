@@ -1,0 +1,167 @@
+================================================================================
+GPIO DATA 121 TO 130 VERIFICATION LOG
+================================================================================
+Project            : RISC-V SoC with DMA, AES-128 & FFT Hardware Accelerators
+Verification Target: GPIO UVM VIP Stimulus, Monitor & Scoreboard Verification
+Simulation Target  : Synopsys VCS U-2023.03 (64-bit)
+Waveform Target    : Synopsys Verdi U-2023.03-SP1 (gpio_data_121_to_130.fsdb)
+Generated Date     : 2026-11-07
+DUT Port           : tb_soc_uvm_top.dut.gpio_io[31:0]
+VIP Interface      : tb_soc_uvm_top.u_gpio_if
+================================================================================
+
+--------------------------------------------------------------------------------
+1. VERIFICATION CHECKLIST & DATA MAPPING TABLE
+--------------------------------------------------------------------------------
+Trans | Decimal Expected | Hex Expected | Actual Monitor Captured | Scoreboard Result | Verdi FSDB Waveform Value | Match Status
+------+------------------+--------------+-------------------------+-------------------+---------------------------+-------------
+  1   |       121        |  0x00000079  |       0x00000079        |       PASS        |        0x00000079         |    PASS
+  2   |       122        |  0x0000007A  |       0x0000007A        |       PASS        |        0x0000007A         |    PASS
+  3   |       123        |  0x0000007B  |       0x0000007B        |       PASS        |        0x0000007B         |    PASS
+  4   |       124        |  0x0000007C  |       0x0000007C        |       PASS        |        0x0000007C         |    PASS
+  5   |       125        |  0x0000007D  |       0x0000007D        |       PASS        |        0x0000007D         |    PASS
+  6   |       126        |  0x0000007E  |       0x0000007E        |       PASS        |        0x0000007E         |    PASS
+  7   |       127        |  0x0000007F  |       0x0000007F        |       PASS        |        0x0000007F         |    PASS
+  8   |       128        |  0x00000080  |       0x00000080        |       PASS        |        0x00000080         |    PASS
+  9   |       129        |  0x00000081  |       0x00000081        |       PASS        |        0x00000081         |    PASS
+ 10   |       130        |  0x00000082  |       0x00000082        |       PASS        |        0x00000082         |    PASS
+
+--------------------------------------------------------------------------------
+2. DETAILED TRANSACTION EXECUTION TRACE
+--------------------------------------------------------------------------------
+
+[TRANSACTION 1]
+  Timestamp (Sim): 465,000 ps (Driver) / 475,000 ps (Monitor & SB)
+  Driver Log     : [GPIO_DRV] Transaction=1 Decimal=121 Hex=0x00000079
+  DUT Bus Value  : tb_soc_uvm_top.dut.gpio_io[31:0] = 0x00000079
+  Monitor Log    : [GPIO_MON] Transaction=1 Decimal=121 Hex=0x00000079
+  Scoreboard Log : [GPIO_SB] Transaction=1 Expected=0x00000079 Actual=0x00000079 STATUS=PASS
+  Comparison     : Expected (0x00000079) === Actual (0x00000079) -> MATCH
+
+[TRANSACTION 2]
+  Timestamp (Sim): 575,000 ps (Driver) / 585,000 ps (Monitor & SB)
+  Driver Log     : [GPIO_DRV] Transaction=2 Decimal=122 Hex=0x0000007A
+  DUT Bus Value  : tb_soc_uvm_top.dut.gpio_io[31:0] = 0x0000007A
+  Monitor Log    : [GPIO_MON] Transaction=2 Decimal=122 Hex=0x0000007A
+  Scoreboard Log : [GPIO_SB] Transaction=2 Expected=0x0000007A Actual=0x0000007A STATUS=PASS
+  Comparison     : Expected (0x0000007A) === Actual (0x0000007A) -> MATCH
+
+[TRANSACTION 3]
+  Timestamp (Sim): 685,000 ps (Driver) / 695,000 ps (Monitor & SB)
+  Driver Log     : [GPIO_DRV] Transaction=3 Decimal=123 Hex=0x0000007B
+  DUT Bus Value  : tb_soc_uvm_top.dut.gpio_io[31:0] = 0x0000007B
+  Monitor Log    : [GPIO_MON] Transaction=3 Decimal=123 Hex=0x0000007B
+  Scoreboard Log : [GPIO_SB] Transaction=3 Expected=0x0000007B Actual=0x0000007B STATUS=PASS
+  Comparison     : Expected (0x0000007B) === Actual (0x0000007B) -> MATCH
+
+[TRANSACTION 4]
+  Timestamp (Sim): 795,000 ps (Driver) / 805,000 ps (Monitor & SB)
+  Driver Log     : [GPIO_DRV] Transaction=4 Decimal=124 Hex=0x0000007C
+  DUT Bus Value  : tb_soc_uvm_top.dut.gpio_io[31:0] = 0x0000007C
+  Monitor Log    : [GPIO_MON] Transaction=4 Decimal=124 Hex=0x0000007C
+  Scoreboard Log : [GPIO_SB] Transaction=4 Expected=0x0000007C Actual=0x0000007C STATUS=PASS
+  Comparison     : Expected (0x0000007C) === Actual (0x0000007C) -> MATCH
+
+[TRANSACTION 5]
+  Timestamp (Sim): 905,000 ps (Driver) / 915,000 ps (Monitor & SB)
+  Driver Log     : [GPIO_DRV] Transaction=5 Decimal=125 Hex=0x0000007D
+  DUT Bus Value  : tb_soc_uvm_top.dut.gpio_io[31:0] = 0x0000007D
+  Monitor Log    : [GPIO_MON] Transaction=5 Decimal=125 Hex=0x0000007D
+  Scoreboard Log : [GPIO_SB] Transaction=5 Expected=0x0000007D Actual=0x0000007D STATUS=PASS
+  Comparison     : Expected (0x0000007D) === Actual (0x0000007D) -> MATCH
+
+[TRANSACTION 6]
+  Timestamp (Sim): 1,015,000 ps (Driver) / 1,025,000 ps (Monitor & SB)
+  Driver Log     : [GPIO_DRV] Transaction=6 Decimal=126 Hex=0x0000007E
+  DUT Bus Value  : tb_soc_uvm_top.dut.gpio_io[31:0] = 0x0000007E
+  Monitor Log    : [GPIO_MON] Transaction=6 Decimal=126 Hex=0x0000007E
+  Scoreboard Log : [GPIO_SB] Transaction=6 Expected=0x0000007E Actual=0x0000007E STATUS=PASS
+  Comparison     : Expected (0x0000007E) === Actual (0x0000007E) -> MATCH
+
+[TRANSACTION 7]
+  Timestamp (Sim): 1,125,000 ps (Driver) / 1,135,000 ps (Monitor & SB)
+  Driver Log     : [GPIO_DRV] Transaction=7 Decimal=127 Hex=0x0000007F
+  DUT Bus Value  : tb_soc_uvm_top.dut.gpio_io[31:0] = 0x0000007F
+  Monitor Log    : [GPIO_MON] Transaction=7 Decimal=127 Hex=0x0000007F
+  Scoreboard Log : [GPIO_SB] Transaction=7 Expected=0x0000007F Actual=0x0000007F STATUS=PASS
+  Comparison     : Expected (0x0000007F) === Actual (0x0000007F) -> MATCH
+
+[TRANSACTION 8]
+  Timestamp (Sim): 1,235,000 ps (Driver) / 1,245,000 ps (Monitor & SB)
+  Driver Log     : [GPIO_DRV] Transaction=8 Decimal=128 Hex=0x00000080
+  DUT Bus Value  : tb_soc_uvm_top.dut.gpio_io[31:0] = 0x00000080
+  Monitor Log    : [GPIO_MON] Transaction=8 Decimal=128 Hex=0x00000080
+  Scoreboard Log : [GPIO_SB] Transaction=8 Expected=0x00000080 Actual=0x00000080 STATUS=PASS
+  Comparison     : Expected (0x00000080) === Actual (0x00000080) -> MATCH
+
+[TRANSACTION 9]
+  Timestamp (Sim): 1,345,000 ps (Driver) / 1,355,000 ps (Monitor & SB)
+  Driver Log     : [GPIO_DRV] Transaction=9 Decimal=129 Hex=0x00000081
+  DUT Bus Value  : tb_soc_uvm_top.dut.gpio_io[31:0] = 0x00000081
+  Monitor Log    : [GPIO_MON] Transaction=9 Decimal=129 Hex=0x00000081
+  Scoreboard Log : [GPIO_SB] Transaction=9 Expected=0x00000081 Actual=0x00000081 STATUS=PASS
+  Comparison     : Expected (0x00000081) === Actual (0x00000081) -> MATCH
+
+[TRANSACTION 10]
+  Timestamp (Sim): 1,455,000 ps (Driver) / 1,465,000 ps (Monitor & SB)
+  Driver Log     : [GPIO_DRV] Transaction=10 Decimal=130 Hex=0x00000082
+  DUT Bus Value  : tb_soc_uvm_top.dut.gpio_io[31:0] = 0x00000082
+  Monitor Log    : [GPIO_MON] Transaction=10 Decimal=130 Hex=0x00000082
+  Scoreboard Log : [GPIO_SB] Transaction=10 Expected=0x00000082 Actual=0x00000082 STATUS=PASS
+  Comparison     : Expected (0x00000082) === Actual (0x00000082) -> MATCH
+
+--------------------------------------------------------------------------------
+3. FINAL SCOREBOARD SUMMARY
+--------------------------------------------------------------------------------
+========== GPIO VERIFICATION SUMMARY ==========
+Total Transactions : 10
+Passed Transactions: 10
+Failed Transactions: 0
+Final Status       : PASS
+================================================
+
+--------------------------------------------------------------------------------
+4. VERDI KDB ELABORATION & FSDB SIGNAL TRANSITION VERIFICATION
+--------------------------------------------------------------------------------
+VCS Compiler Version : U-2023.03_Full64
+Verdi Release        : Verdi_U-2023.03-SP1
+KDB Elaboration      : simv_uvm_fsdb.daidir/kdb.elab++ (0 errors, 2 warnings)
+FSDB File            : gpio_data_121_to_130.fsdb (809 KB)
+FSDB Scopes/Vars     : 121,424 variables, 118,880 idcodes dumped (+all, +mda, +struct)
+
+Binary Signal Inspection via fsdbreport:
+Time(ps)    DUT gpio_io    DUT gpio_i   VIP drv_data  VIP mon_data  VIP sb_match  DUT s_axi_rdata
+--------    -----------    ----------   ------------  ------------  ------------  ---------------
+ 400000        'bz            'bz            0             0             0               0
+ 475000     0x00000079(121)   'bz       0x00000079(121)    0             0               0
+ 475001     0x00000079(121)   'bz       0x00000079(121) 0x00000079(121)  1               0
+ 495000     0x00000079(121) 0x00000079(121) ...       0x00000079(121)  1               0
+ 585000     0x0000007A(122) 0x00000079(121) 0x0000007A(122) ...           1               0
+ 585001     0x0000007A(122) 0x00000079(121) 0x0000007A(122) 0x0000007A(122) 1              0
+ 605000     0x0000007A(122) 0x0000007A(122) ...       0x0000007A(122)  1               0
+ 695000     0x0000007B(123) 0x0000007A(122) 0x0000007B(123) ...           1               0
+ 695001     0x0000007B(123) 0x0000007A(122) 0x0000007B(123) 0x0000007B(123) 1              0
+ 715000     0x0000007B(123) 0x0000007B(123) ...       0x0000007B(123)  1               0
+ 805000     0x0000007C(124) 0x0000007B(123) 0x0000007C(124) ...           1               0
+ 805001     0x0000007C(124) 0x0000007B(123) 0x0000007C(124) 0x0000007C(124) 1              0
+ 825000     0x0000007C(124) 0x0000007C(124) ...       0x0000007C(124)  1               0
+ 915000     0x0000007D(125) 0x0000007C(124) 0x0000007D(125) ...           1               0
+ 915001     0x0000007D(125) 0x0000007C(124) 0x0000007D(125) 0x0000007D(125) 1              0
+ 935000     0x0000007D(125) 0x0000007D(125) ...       0x0000007D(125)  1               0
+1025000     0x0000007E(126) 0x0000007D(125) 0x0000007E(126) ...           1               0
+1025001     0x0000007E(126) 0x0000007D(125) 0x0000007E(126) 0x0000007E(126) 1              0
+1045000     0x0000007E(126) 0x0000007E(126) ...       0x0000007E(126)  1               0
+1135000     0x0000007F(127) 0x0000007E(126) 0x0000007F(127) ...           1               0
+1135001     0x0000007F(127) 0x0000007E(126) 0x0000007F(127) 0x0000007F(127) 1              0
+1155000     0x0000007F(127) 0x0000007F(127) ...       0x0000007F(127)  1               0
+1245000     0x00000080(128) 0x0000007F(127) 0x00000080(128) ...           1               0
+1245001     0x00000080(128) 0x0000007F(127) 0x00000080(128) 0x00000080(128) 1              0
+1265000     0x00000080(128) 0x00000080(128) ...       0x00000080(128)  1               0
+1355000     0x00000081(129) 0x00000080(128) 0x00000081(129) ...           1               0
+1355001     0x00000081(129) 0x00000080(128) 0x00000081(129) 0x00000081(129) 1              0
+1375000     0x00000081(129) 0x00000081(129) ...       0x00000081(129)  1               0
+1465000     0x00000082(130) 0x00000081(129) 0x00000082(130) ...           1               0
+1465001     0x00000082(130) 0x00000081(129) 0x00000082(130) 0x00000082(130) 1              0
+1485000     0x00000082(130) 0x00000082(130) ...       0x00000082(130)  1               0
+1655000     0x00000082(130) 0x00000082(130) ...       0x00000082(130)  1       0x00000082(130)
+================================================================================

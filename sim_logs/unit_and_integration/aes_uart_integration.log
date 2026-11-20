@@ -1,0 +1,177 @@
+Command: /home/student/Documents/honours_121/CBP/run/./simv_integration -l aes_uart_integration.log
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03_Full64; Runtime version U-2023.03_Full64;  Oct  3 15:40 2026
+Addressing configuration for axi_interconnect instance tb_main_top.dut.u_axi_interconnect_3x15.axi_interconnect_inst
+ 0 ( 0): 00040000 / 17 -- 00040000-0005ffff
+ 1 ( 0): 00080000 / 17 -- 00080000-0009ffff
+ 2 ( 0): 80001000 / 12 -- 80001000-80001fff
+ 3 ( 0): 80002000 / 12 -- 80002000-80002fff
+ 4 ( 0): 80003000 / 12 -- 80003000-80003fff
+ 5 ( 0): 80007000 / 12 -- 80007000-80007fff
+11 ( 0): 80004000 / 12 -- 80004000-80004fff
+12 ( 0): 80005000 / 12 -- 80005000-80005fff
+13 ( 0): 80006000 / 12 -- 80006000-80006fff
+*Verdi* Loading libsscore_vcs202303.so
+*Verdi* WARNING: No '-debug_access' in VCS compile options
+FSDB Dumper for VCS, Release Verdi_U-2023.03-SP1, Linux x86_64/64bit, 05/28/2023
+(C) 1996 - 2023 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'main_top.fsdb'
+*Verdi* : Begin traversing the scope (tb_main_top), layer (0).
+*Verdi* : End of traversing.
+================================================================================
+          STARTING EXHAUSTIVE VERIFICATION OF 3x15 AXI + UART TOP               
+================================================================================
+
+[SCENARIO 1] Verifying Reset & Initial Idle Conditions...
+[PASS] Reset State: uart_tx remains High (Idle)
+[PASS] Reset State: uart_irq is Low (Inactive)
+[PASS] Post-Reset: uart_tx remains High (Idle)
+[PASS] Post-Reset: uart_irq remains Low
+
+[SCENARIO 2] Verifying Unmapped Address Decoding (DECERR = 2'b11)...
+[PASS] Unmapped Write High (0x9000_0000): Returns DECERR (2'b11)
+[PASS] Unmapped Write High: Preserves Transaction ID (0xA1)
+[PASS] Unmapped Read High (0x9000_0000): Returns DECERR (2'b11)
+[PASS] Unmapped Read High: Read data is 0
+[PASS] Unmapped Write Low (0x0001_0000): Returns DECERR (2'b11)
+[PASS] Unmapped Read Low (0x0001_0000): Returns DECERR (2'b11)
+
+[SCENARIO 3] Verifying Crossbar Routing for Masters (M0, M1, M2) & Slaves...
+[PASS] Routing: M1 -> S0 (IMEM) Write Returns OKAY
+[PASS] Routing: M1 -> S0 (IMEM) Read Returns OKAY
+[PASS] Routing: M1 -> S0 (IMEM) Read Signature Valid
+[PASS] Routing: M1 -> S1 (DMEM) Write Returns OKAY
+[PASS] Routing: M1 -> S1 (DMEM) Read Returns OKAY
+[PASS] Routing: M1 -> S1 (DMEM) Read Signature Valid
+[PASS] Routing: M1 -> S2 (GPIO) Write Returns OKAY
+[PASS] Routing: M1 -> S2 (GPIO) Read Returns OKAY
+[PASS] Routing: M1 -> S3 (Timer) Write Returns OKAY
+[PASS] Routing: M1 -> S3 (Timer) Read Returns OKAY
+[PASS] Routing: M0 (VeeR IFU) -> S4 (UART) Read Returns OKAY
+[PASS] Routing: M2 (DMA) -> S4 (UART) Read Returns OKAY
+
+[SCENARIO 4] Verifying UART DLAB & 115200 Baud Divisor Setup...
+[PASS] UART: Write IER=0x00 with DLAB=0 Returns OKAY
+[PASS] UART: Write LCR=0x83 (Enable DLAB) Returns OKAY
+[PASS] UART: Write Baud Divisor (347) Returns OKAY
+[PASS] UART: Write LCR=0x03 (Disable DLAB) Returns OKAY
+[PASS] UART: Verify normal register access restored (LSR Read OKAY)
+[PASS] UART: Verify THRE=1 in LSR
+
+[SCENARIO 5] Verifying UART TX Transmission at 115200 Baud (Byte = 0xA5)...
+[PASS] UART TX: Write byte 0xA5 to THR Returns OKAY
+[UART_TB_TX] Detected START bit transition at time 1741000
+[UART_TB_TX] Sampled bit 0 = 1 at time 14792000
+[UART_TB_TX] Sampled bit 1 = 0 at time 23492000
+[UART_TB_TX] Sampled bit 2 = 1 at time 32192000
+[UART_TB_TX] Sampled bit 3 = 0 at time 40892000
+[UART_TB_TX] Sampled bit 4 = 0 at time 49592000
+[UART_TB_TX] Sampled bit 5 = 1 at time 58292000
+[UART_TB_TX] Sampled bit 6 = 0 at time 66992000
+[UART_TB_TX] Sampled bit 7 = 1 at time 75692000
+[UART_TB_TX] Sampled STOP bit = 1 (valid) at time 84392000
+[UART_TB_TX] Successfully decoded TX byte = 0xa5
+[PASS] UART TX: Serial frame format (START & STOP bits) valid
+[PASS] UART TX: Decoded byte exactly matches transmitted byte (0xA5)
+[PASS] UART TX: LSR bit 5 (THRE) is set
+
+[SCENARIO 6] Verifying UART RX Reception at 115200 Baud (Byte = 0x5A)...
+[PASS] UART RX: Write IER=0x01 to enable DATA_READY in LSR
+[UART_TB_RX] Injecting byte 0x5a over serial uart_rx (bit period = 347 fixed_clk cycles)...
+[UART_TB_RX] Finished serial injection for byte 0x5a at time 171291000
+[PASS] UART RX: LSR bit 0 (DATA_READY) asserted
+[PASS] UART RX: Read RBR Returns OKAY
+[PASS] UART RX: Received byte matches injected byte (0x5A)
+[PASS] UART RX: LSR bit 0 cleared after reading RBR
+
+[SCENARIO 7] Verifying UART Interrupt Behavior (IER=0 vs IER=1)...
+[UART_TB_RX] Injecting byte 0x3c over serial uart_rx (bit period = 347 fixed_clk cycles)...
+[UART_TB_RX] Finished serial injection for byte 0x3c at time 258441000
+[PASS] UART IRQ: With IER=0, uart_irq remains deasserted (0)
+[PASS] UART IRQ: Flushed RBR byte (0x3C)
+[PASS] UART IRQ: Write IER=0x01 Returns OKAY
+[UART_TB_RX] Injecting byte 0x7e over serial uart_rx (bit period = 347 fixed_clk cycles)...
+[UART_TB_RX] Finished serial injection for byte 0x7e at time 345441000
+[PASS] UART IRQ: With IER=1, uart_irq asserts High upon byte reception
+[PASS] UART IRQ: Read received byte (0x7E)
+[PASS] UART IRQ: uart_irq deasserts Low after reading RBR
+
+[SCENARIO 8] Verifying AXI Handshake Ordering & Backpressure Edge Cases...
+[PASS] Handshake: AW asserted 5 cycles before W completes cleanly (OKAY)
+[PASS] Handshake: W asserted 5 cycles before AW completes cleanly (OKAY)
+[PASS] Handshake: BREADY backpressure delay handled cleanly (OKAY)
+[PASS] Handshake: RREADY backpressure delay handled cleanly (OKAY)
+[PASS] Handshake: Read data valid after delayed RREADY (THRE=1)
+
+[SCENARIO 9] Verifying AXI Transaction ID Preservation...
+[PASS] ID Preservation: Write ID 0xA8 returned in BID
+[PASS] ID Preservation: Read ID 0xD4 returned in RID
+[PASS] ID Preservation: Write ID 0xFE returned in BID
+[PASS] ID Preservation: Read ID 0x7B returned in RID
+
+[SCENARIO 10] Testing Unsupported Bursts (AWLEN > 0, ARLEN > 0)...
+[PASS] Unsupported Burst Write: Completes without hang
+[PASS] Unsupported Burst Read: Completes without hang
+[PASS] UART Integrity: LSR readable & valid after burst attempts
+
+[SCENARIO 11] Verifying System Reset During Activity & Clean Recovery...
+[PASS] Reset Recovery: Write to LCR post-reset returns OKAY
+[PASS] Reset Recovery: Read from LSR post-reset returns OKAY
+
+[SCENARIO 12] AES-128 Encryption through AXI Interconnect S5/M05...
+  AES_BASE = 0x80007000  (S5 / M05)
+  KEY  = 000102030405060708090a0b0c0d0e0f
+  PLAIN= 00112233445566778899aabbccddeeff
+  EXP  = 69c4e0d86a7b0430d8cdb78070b4c55a
+  [12.1] Writing AES key registers...
+  [12.2] Writing plaintext registers...
+  [12.3] Starting encryption (CSR[0]=1)...
+  [12.4] Polling CSR for DONE bit...
+  [12.4] Encryption DONE asserted.
+  [12.5] Reading ciphertext...
+[PASS] AES ENC: TOUT0 = 70b4c55a
+[PASS] AES ENC: TOUT1 = d8cdb780
+[PASS] AES ENC: TOUT2 = 6a7b0430
+[PASS] AES ENC: TOUT3 = 69c4e0d8
+  [12] AES Encryption scenario: PASS
+
+[SCENARIO 13] AES-128 Decryption through AXI Interconnect S5/M05...
+  INV_BASE = 0x80007100  (S5 / M05, inv-cipher region)
+  [13.1] Writing inverse-cipher key registers...
+  [13.2] Triggering inverse key expansion (CSR[1]=1)...
+  [13.3] Polling CSR for KDONE bit...
+  [13.3] Key expansion DONE.
+  [13.4] Writing ciphertext to inv-cipher TEXT_IN...
+  [13.5] Starting decryption (CSR[0]=1)...
+  [13.6] Polling CSR for DONE bit...
+  [13.6] Decryption DONE asserted.
+  [13.7] Reading decrypted plaintext...
+[PASS] AES DEC: TOUT0 == original TIN0 (ccddeeff)
+[PASS] AES DEC: TOUT1 == original TIN1 (8899aabb)
+[PASS] AES DEC: TOUT2 == original TIN2 (44556677)
+[PASS] AES DEC: TOUT3 == original TIN3 (00112233)
+  [13] AES Decryption scenario: PASS
+
+================================================================================
+                         VERIFICATION SCOREBOARD SUMMARY                        
+================================================================================
+  TOTAL CHECKS  : 65
+  PASSED CHECKS : 65
+  FAILED CHECKS : 0
+================================================================================
+  UART TEST (S4/M04)         : PASS
+  AES ENCRYPTION (S5/M05)    : PASS
+  AES DECRYPTION (S5/M05)    : PASS
+  AXI INTERCONNECT (3x15)    : PASS
+================================================================================
+  >>> OVERALL TEST      : PASS <<<
+================================================================================
+
+$finish called from file "../tb/tb_main_top.sv", line 1945.
+$finish at simulation time            350555000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 350555000 ps
+CPU Time:      0.180 seconds;       Data structure size:   0.1Mb
+Sat Oct  3 15:40:39 2026

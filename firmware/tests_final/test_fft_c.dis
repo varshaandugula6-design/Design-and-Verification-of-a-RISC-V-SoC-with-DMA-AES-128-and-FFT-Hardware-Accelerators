@@ -1,0 +1,49 @@
+
+/home/student/Documents/honours_121/CBP/firmware/tests_final/test_fft_c.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00040000 <_start>:
+   40000:	00088137          	lui	sp,0x88
+   40004:	00000097          	auipc	ra,0x0
+   40008:	00c080e7          	jalr	12(ra) # 40010 <main>
+
+0004000c <_loop>:
+   4000c:	0000006f          	j	4000c <_loop>
+
+00040010 <main>:
+   40010:	80009737          	lui	a4,0x80009
+   40014:	000046b7          	lui	a3,0x4
+   40018:	00d72023          	sw	a3,0(a4) # 80009000 <main+0x7ffc8ff0>
+   4001c:	00072223          	sw	zero,4(a4)
+   40020:	00072423          	sw	zero,8(a4)
+   40024:	00072623          	sw	zero,12(a4)
+   40028:	800087b7          	lui	a5,0x80008
+   4002c:	00100693          	li	a3,1
+   40030:	00d7a023          	sw	a3,0(a5) # 80008000 <main+0x7ffc7ff0>
+   40034:	00478713          	addi	a4,a5,4
+   40038:	00072783          	lw	a5,0(a4)
+   4003c:	0017f793          	andi	a5,a5,1
+   40040:	fe078ce3          	beqz	a5,40038 <main+0x28>
+   40044:	800097b7          	lui	a5,0x80009
+   40048:	0007a783          	lw	a5,0(a5) # 80009000 <main+0x7ffc8ff0>
+   4004c:	000806b7          	lui	a3,0x80
+   40050:	01000713          	li	a4,16
+   40054:	00f6a023          	sw	a5,0(a3) # 80000 <main+0x3fff0>
+   40058:	00e78e63          	beq	a5,a4,40074 <main+0x64>
+   4005c:	deadc7b7          	lui	a5,0xdeadc
+   40060:	eef78793          	addi	a5,a5,-273 # deadbeef <main+0xdea9bedf>
+   40064:	00f6a223          	sw	a5,4(a3)
+   40068:	00f6ac23          	sw	a5,24(a3)
+   4006c:	00100513          	li	a0,1
+   40070:	00008067          	ret
+   40074:	ff700637          	lui	a2,0xff700
+   40078:	000806b7          	lui	a3,0x80
+   4007c:	00160613          	addi	a2,a2,1 # ff700001 <main+0xff6bfff1>
+   40080:	c001d737          	lui	a4,0xc001d
+   40084:	00c6a223          	sw	a2,4(a3) # 80004 <main+0x3fff4>
+   40088:	afe70713          	addi	a4,a4,-1282 # c001cafe <main+0xbffdcaee>
+   4008c:	00e6ac23          	sw	a4,24(a3)
+   40090:	00000513          	li	a0,0
+   40094:	00008067          	ret
